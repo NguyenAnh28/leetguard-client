@@ -1,2 +1,2 @@
-# leetblock-client
-Frontend code for LeetBlock
+# leetguard-client
+Frontend code for LeetGuard
