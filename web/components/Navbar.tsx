@@ -1,113 +1,75 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import { Moon, Sun, Code } from 'lucide-react';
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+interface NavbarProps {
+  darkMode: boolean;
+  toggleTheme: () => void;
+}
 
+export default function Navbar({ darkMode, toggleTheme }: NavbarProps) {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-warm-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-black/10 dark:bg-white/5 border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 relative">
-                <Image
-                  src="/leetguard-logo.svg"
-                  alt="LeetGuard Logo"
-                  width={40}
-                  height={40}
-                  className="w-full h-full"
-                />
-              </div>
-              <span className="text-white font-semibold text-xl">
-                LeetGuard
-              </span>
+          <div className="flex items-center space-x-2">
+            <div className="bg-[#FFA116] p-2 rounded-xl">
+              <Code className="w-6 h-6 text-black" />
             </div>
+            <span className="text-xl font-bold text-white dark:text-white">
+              LeetGuard
+            </span>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Center Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
-              className="text-warm-gray-300 hover:text-white transition-smooth btn-hover-underline"
+              className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
             >
               Features
             </a>
             <a
               href="#pricing"
-              className="text-warm-gray-300 hover:text-white transition-smooth btn-hover-underline"
+              className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
             >
               Pricing
             </a>
             <a
               href="#docs"
-              className="text-warm-gray-300 hover:text-white transition-smooth btn-hover-underline"
+              className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
             >
               Docs
             </a>
           </div>
 
-          {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="text-warm-gray-300 hover:text-white transition-smooth btn-hover-underline">
+          {/* Right Side */}
+          <div className="flex items-center space-x-4">
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-xl hover:bg-white/10 transition-colors duration-200"
+              aria-label="Toggle theme"
+            >
+              {darkMode ? (
+                <Sun className="w-5 h-5 text-neutral-300 hover:text-white" />
+              ) : (
+                <Moon className="w-5 h-5 text-neutral-600 hover:text-neutral-800" />
+              )}
+            </button>
+
+            {/* Login */}
+            <button className="text-neutral-300 dark:text-neutral-300 hover:text-white dark:hover:text-white hover:underline transition-colors duration-200">
               Login
             </button>
-            <button className="bg-black text-white px-6 py-2 rounded-lg border border-warm-gray-700 hover:border-leet-yellow transition-smooth btn-hover-underline">
-              Sign Up ↗
-            </button>
-          </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-warm-gray-300 hover:text-white transition-smooth"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {/* Sign Up */}
+            <button className="bg-white dark:bg-black text-black dark:text-white px-6 py-2 rounded-xl hover:underline transition-colors duration-200 font-medium">
+              Sign Up
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 border-t border-warm-gray-800">
-              <a
-                href="#features"
-                className="block px-3 py-2 text-warm-gray-300 hover:text-white transition-smooth"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Features
-              </a>
-              <a
-                href="#pricing"
-                className="block px-3 py-2 text-warm-gray-300 hover:text-white transition-smooth"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
-                href="#docs"
-                className="block px-3 py-2 text-warm-gray-300 hover:text-white transition-smooth"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Docs
-              </a>
-              <div className="pt-4 space-y-2">
-                <button className="block w-full text-left px-3 py-2 text-warm-gray-300 hover:text-white transition-smooth">
-                  Login
-                </button>
-                <button className="block w-full text-left px-3 py-2 bg-black text-white rounded-lg border border-warm-gray-700 hover:border-leet-yellow transition-smooth">
-                  Sign Up ↗
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );

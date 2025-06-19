@@ -1,99 +1,106 @@
-import { Twitter, Github, Linkedin } from "lucide-react";
-import Image from "next/image";
+'use client';
 
-const quickLinks = [
-  { name: "Features", href: "#features" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Docs", href: "#docs" },
-  { name: "FAQ", href: "#faq" },
-  { name: "Contact", href: "#contact" },
-];
-
-const socialLinks = [
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "GitHub", icon: Github, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-];
+import { Code, Github, Twitter, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-warm-gray-800 bg-black/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Brand */}
+    <footer className="border-t border-white/10 py-16 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 relative">
-                <Image
-                  src="/leetguard-logo.svg"
-                  alt="LeetGuard Logo"
-                  width={40}
-                  height={40}
-                  className="w-full h-full"
-                />
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="bg-[#FFA116] p-2 rounded-xl">
+                <Code className="w-6 h-6 text-black" />
               </div>
-              <span className="text-white font-semibold text-xl">
+              <span className="text-xl font-bold text-white dark:text-white">
                 LeetGuard
               </span>
             </div>
-            <p className="text-warm-gray-300 max-w-md">
-              Your coding buddy that rewards you with breaks only when you've
-              earned them. Stay focused, solve problems, unlock your potential.
+            <p className="text-neutral-300 dark:text-neutral-300 max-w-md leading-relaxed">
+              Your coding companion that rewards deep work and eliminates distractions. 
+              Focus on what matters most.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Product Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-warm-gray-300 hover:text-white transition-smooth btn-hover-underline"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+            <h3 className="text-white dark:text-white font-semibold mb-4">Product</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#features" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#docs" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Docs
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Support Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="w-10 h-10 bg-warm-gray-800 rounded-lg flex items-center justify-center text-warm-gray-300 hover:text-leet-yellow hover:bg-warm-gray-700 transition-smooth"
-                  aria-label={social.name}
-                >
-                  <social.icon size={20} />
+            <h3 className="text-white dark:text-white font-semibold mb-4">Support</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#contact" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Contact
                 </a>
-              ))}
-            </div>
+              </li>
+              <li>
+                <a href="#privacy" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#terms" className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200">
+                  Terms
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-warm-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-warm-gray-400 text-sm">
-            © 2024 LeetGuard. All rights reserved.
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10">
+          <p className="text-neutral-400 text-sm mb-4 md:mb-0">
+            © 2025 LeetGuard. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          
+          {/* Social Links */}
+          <div className="flex items-center space-x-4">
             <a
-              href="#"
-              className="text-warm-gray-400 hover:text-white text-sm transition-smooth"
+              href="#github"
+              className="text-neutral-400 hover:text-white transition-colors duration-200"
+              aria-label="GitHub"
             >
-              Privacy Policy
+              <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              className="text-warm-gray-400 hover:text-white text-sm transition-smooth"
+              href="#twitter"
+              className="text-neutral-400 hover:text-white transition-colors duration-200"
+              aria-label="Twitter"
             >
-              Terms of Service
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a
+              href="#linkedin"
+              className="text-neutral-400 hover:text-white transition-colors duration-200"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>

@@ -1,93 +1,58 @@
-import { Zap, Unlock, Shield, TrendingUp, Chrome } from "lucide-react";
+'use client';
+
+import { Zap, Shield, Unlock } from 'lucide-react';
 
 const features = [
   {
     icon: Zap,
-    title: "Smart Problem Detection",
-    description: "Automatically detects solved LeetCode problems in real-time.",
-    color: "text-leet-yellow",
-  },
-  {
-    icon: Unlock,
-    title: "Instant Unlock",
-    description:
-      "Unlocks distracting sites only when you've earned it by solving.",
-    color: "text-leet-yellow",
+    title: 'Smart Problem Detection',
+    description: 'Automatically detects solved LeetCode problems in real-time.',
   },
   {
     icon: Shield,
-    title: "Custom Site Blocking",
-    description: "Choose which sites to block to maximize your focus.",
-    color: "text-leet-yellow",
+    title: 'Custom Site Blocking',
+    description: 'Choose which sites to block to maximize your focus.',
   },
   {
-    icon: TrendingUp,
-    title: "Progress Tracking",
-    description: "Track your coding streaks and solved problems over time.",
-    color: "text-leet-yellow",
-  },
-  {
-    icon: Chrome,
-    title: "Seamless Integration",
-    description: "Works smoothly as a Chrome extension with zero setup.",
-    color: "text-leet-yellow",
+    icon: Unlock,
+    title: 'Instant Unlock',
+    description: 'Unlock distracting sites only when you\'ve earned it by solving.',
   },
 ];
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
+    <section id="features" className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Everything you need to{" "}
-            <span className="text-leet-yellow">stay focused</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white mb-6">
+            Built for Focused Developers
           </h2>
-          <p className="text-xl text-warm-gray-300 max-w-3xl mx-auto">
-            LeetGuard combines smart technology with proven productivity
-            principles to help you build better coding habits.
+          <p className="text-xl text-neutral-300 dark:text-neutral-300 max-w-2xl mx-auto">
+            LeetGuard combines smart detection with customizable blocking to create the perfect coding environment.
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group relative bg-gradient-to-br from-warm-gray-800/50 to-warm-gray-900/50 rounded-xl p-6 border border-warm-gray-700 hover:border-leet-yellow/50 transition-smooth"
-            >
-              {/* Background glow on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-leet-yellow/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-
-              <div className="relative">
-                {/* Icon */}
-                <div className="w-12 h-12 bg-leet-yellow/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-leet-yellow/20 transition-smooth">
-                  <feature.icon className={`w-6 h-6 ${feature.color}`} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <div
+                key={index}
+                className="bg-white/5 dark:bg-black/20 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 dark:hover:bg-black/30 hover:shadow-2xl transition-all duration-300 group"
+              >
+                <div className="bg-[#FFA116] p-3 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <IconComponent className="w-6 h-6 text-black" />
                 </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-leet-yellow transition-smooth">
+                <h3 className="text-2xl font-bold text-white dark:text-white mb-4">
                   {feature.title}
                 </h3>
-
-                <p className="text-warm-gray-300 leading-relaxed">
+                <p className="text-neutral-300 dark:text-neutral-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
-
-              {/* Subtle accent line */}
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-leet-yellow/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-2 text-warm-gray-300 hover:text-leet-yellow transition-smooth cursor-pointer group">
-            <span className="font-medium">Learn more about our features</span>
-            <div className="w-4 h-4 border-r-2 border-b-2 border-current transform rotate-45 group-hover:translate-x-1 transition-transform"></div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

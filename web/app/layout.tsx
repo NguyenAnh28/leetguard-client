@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import './globals.css';
+import type { Metadata } from 'next';
+import { DM_Sans } from 'next/font/google';
+
+const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "LeetGuard - Focus. Solve. Unlock your day.",
-  description:
-    "Your coding buddy that rewards you with breaks only when you've earned them.",
-  icons: {
-    icon: "/leetguard-logo.svg",
-    shortcut: "/leetguard-logo.svg",
-    apple: "/leetguard-logo.svg",
-  },
+  title: 'LeetGuard - Focus. Solve. Unlock your day.',
+  description: 'Your coding companion that rewards deep work and eliminates distractions.',
 };
 
 export default function RootLayout({
@@ -18,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-premium-gradient min-h-screen">{children}</body>
+    <html lang="en" className="dark">
+      <body className={dmSans.className}>{children}</body>
     </html>
   );
 }
