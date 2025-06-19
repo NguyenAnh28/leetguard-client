@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center pt-40 px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           <span className="text-white">Focus. Solve.</span>
           <br />
           <span className="text-[#FFA116]">Unlock your day</span>

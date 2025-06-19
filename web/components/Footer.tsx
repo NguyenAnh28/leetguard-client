@@ -1,6 +1,7 @@
 "use client";
 
-import { Code, Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Twitter, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,9 +11,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-[#FFA116] p-2 rounded-xl">
-                <Code className="w-6 h-6 text-black" />
-              </div>
+              <Image
+                src="/leetguard-logo-black.svg"
+                alt="LeetGuard Logo"
+                width={32}
+                height={32}
+              />
               <span className="text-xl font-bold text-white dark:text-white">
                 LeetGuard
               </span>

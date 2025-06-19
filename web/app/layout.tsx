@@ -1,12 +1,27 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { DM_Sans } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 
-const dmSans = DM_Sans({ subsets: ['latin'] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'LeetGuard - Focus. Solve. Unlock your day.',
-  description: 'Your coding companion that rewards deep work and eliminates distractions.',
+  title: "LeetGuard",
+  description:
+    "Your coding companion that rewards deep work and eliminates distractions.",
+  icons: {
+    icon: [
+      {
+        url: "/leetguard-logo-black.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: [
+      {
+        url: "/leetguard-logo-black.svg",
+        type: "image/svg+xml",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

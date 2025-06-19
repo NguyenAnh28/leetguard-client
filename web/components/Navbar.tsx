@@ -1,6 +1,6 @@
 "use client";
 
-import { Code } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -9,9 +9,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-[#FFA116] p-2 rounded-xl">
-              <Code className="w-6 h-6 text-black" />
-            </div>
+            <Image
+              src="/leetguard-logo-black.svg"
+              alt="LeetGuard Logo"
+              width={32}
+              height={32}
+            />
             <span className="text-xl font-semibold text-white">LeetGuard</span>
           </div>
 
