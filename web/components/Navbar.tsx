@@ -27,16 +27,10 @@ export default function Navbar() {
               Features
             </a>
             <a
-              href="#pricing"
+              href="#testimonial"
               className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200 text-sm font-medium"
             >
-              Pricing
-            </a>
-            <a
-              href="#docs"
-              className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200 text-sm font-medium"
-            >
-              Docs
+              Testimonial
             </a>
           </div>
 

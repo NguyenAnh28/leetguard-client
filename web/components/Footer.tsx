@@ -36,17 +36,17 @@ export default function Footer() {
               <li>
                 <a
                   href="#features"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className="text-neutral-300 dark:text-neutral-300 hover:text-white dark:hover:text-white transition-colors duration-200"
                 >
                   Features
                 </a>
               </li>
               <li>
                 <a
-                  href="#pricing"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  href="#testimonial"
+                  className="text-neutral-300 dark:text-neutral-300 hover:text-white dark:hover:text-white transition-colors duration-200"
                 >
-                  Pricing
+                  Testimonial
                 </a>
               </li>
               <li>

@@ -7,7 +7,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Features from "@/components/Features";
 import Testimonial from "@/components/Testimonial";
-import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
@@ -292,7 +291,6 @@ export default function LandingPage() {
 
       <Features />
       <Testimonial />
-      <Pricing />
       <Footer />
     </div>
   );
