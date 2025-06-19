@@ -64,7 +64,7 @@ export default function LandingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center pt-20 px-6">
+      <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
         {/* Floating Social Media Logos */}
         <motion.div
           className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
@@ -241,8 +241,8 @@ export default function LandingPage() {
               transition={{ duration: 0.8 }}
               className="mb-6"
             >
-              <span className="inline-flex items-center px-5 py-2 rounded-full text-base font-normal tracking-wide bg-black/30 text-white backdrop-blur-md border border-white/20 mb-1">
-                <Sparkles className="w-5 h-5 mr-2.5" />
+              <span className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-normal tracking-wide bg-black/30 text-white backdrop-blur-md border border-white/20 mb-1">
+                <Sparkles className="w-4 h-4 mr-2" />
                 Silence the scroll. Build your future
               </span>
             </motion.div>
@@ -251,7 +251,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-bold mb-8 leading-[1.3] md:leading-[1.2] py-1 tracking-super-tight"
+              className="text-4xl md:text-6xl font-bold mb-8 leading-[1.3] md:leading-[1.2] py-1 tracking-super-tight"
             >
               <span className="text-white">Focus. Solve.</span>
               <br />
@@ -264,7 +264,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
+              className="text-md text-neutral-100 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
               Your coding companion that rewards deep work and eliminates
               distractions.

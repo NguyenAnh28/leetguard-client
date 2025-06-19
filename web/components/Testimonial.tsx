@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Testimonial() {
   return (
-    <section className="py-24 px-6">
+    <section className="pt-24 pb-40 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <blockquote className="text-3xl md:text-4xl font-medium italic text-white dark:text-white leading-relaxed mb-8">
           "Finally locked in."
