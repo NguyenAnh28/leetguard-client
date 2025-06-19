@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="bg-[#FFA116] p-2 rounded-xl">
               <Code className="w-6 h-6 text-black" />
             </div>
-            <span className="text-xl font-bold text-white">LeetGuard</span>
+            <span className="text-xl font-semibold text-white">LeetGuard</span>
           </div>
 
           {/* Center Navigation */}

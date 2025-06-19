@@ -26,7 +26,7 @@ export default function Pricing() {
         <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white mb-6">
           Simple. Free. Effective.
         </h2>
-        <p className="text-xl text-neutral-300 dark:text-neutral-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-neutral-300 dark:text-neutral-300 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
           LeetGuard is 100% free — no signups, no paywalls, just better focus.
         </p>
 
@@ -95,7 +95,7 @@ export default function Pricing() {
                 Get Started for Free
               </Button>
             </CardContent>
-            <CardFooter className="text-xs text-center text-neutral-400 p-12 pt-0">
+            <CardFooter className="text-xs text-center text-neutral-400 p-12 pt-0 font-medium">
               No credit card required. Start coding better today.
             </CardFooter>
           </Card>

@@ -73,9 +73,9 @@ export default function LandingPage() {
               transition={{ duration: 0.8 }}
               className="mb-6"
             >
-              <span className="inline-flex items-center px-5 py-2 rounded-full text-base font-normal tracking-wide bg-black/30 text-white backdrop-blur-md border border-white/20 mb-4">
+              <span className="inline-flex items-center px-5 py-2 rounded-full text-base font-normal tracking-wide bg-black/30 text-white backdrop-blur-md border border-white/20 mb-1">
                 <Sparkles className="w-5 h-5 mr-2.5" />
-                Focus. Solve. Unlock your day
+                Silence the scroll. Build your future
               </span>
             </motion.div>
 
@@ -96,7 +96,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-light tracking-wide leading-relaxed"
+              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-medium tracking-wide leading-relaxed"
             >
               Your coding companion that rewards deep work and eliminates
               distractions.

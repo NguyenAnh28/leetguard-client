@@ -1,22 +1,23 @@
-'use client';
+"use client";
 
-import { Zap, Shield, Unlock } from 'lucide-react';
+import { Zap, Shield, Unlock } from "lucide-react";
 
 const features = [
   {
     icon: Zap,
-    title: 'Smart Problem Detection',
-    description: 'Automatically detects solved LeetCode problems in real-time.',
+    title: "Smart Problem Detection",
+    description: "Automatically detects solved LeetCode problems in real-time.",
   },
   {
     icon: Shield,
-    title: 'Custom Site Blocking',
-    description: 'Choose which sites to block to maximize your focus.',
+    title: "Custom Site Blocking",
+    description: "Choose which sites to block to maximize your focus.",
   },
   {
     icon: Unlock,
-    title: 'Instant Unlock',
-    description: 'Unlock distracting sites only when you\'ve earned it by solving.',
+    title: "Instant Unlock",
+    description:
+      "Unlock distracting sites only when you've earned it by solving.",
   },
 ];
 
@@ -28,8 +29,9 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white mb-6">
             Built for Focused Developers
           </h2>
-          <p className="text-xl text-neutral-300 dark:text-neutral-300 max-w-2xl mx-auto">
-            LeetGuard combines smart detection with customizable blocking to create the perfect coding environment.
+          <p className="text-xl text-neutral-300 dark:text-neutral-300 max-w-2xl mx-auto font-medium">
+            LeetGuard combines smart detection with customizable blocking to
+            create the perfect coding environment.
           </p>
         </div>
 
@@ -47,7 +49,7 @@ export default function Features() {
                 <h3 className="text-2xl font-bold text-white dark:text-white mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-neutral-300 dark:text-neutral-300 leading-relaxed">
+                <p className="text-neutral-300 dark:text-neutral-300 leading-relaxed font-medium">
                   {feature.description}
                 </p>
               </div>
