@@ -29,7 +29,7 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white mb-6">
             Built for Focused Developers
           </h2>
-          <p className="text-xl text-neutral-300 dark:text-neutral-300 max-w-2xl mx-auto font-medium">
+          <p className="text-xl text-neutral-300 dark:text-neutral-300 max-w-2xl mx-auto font-normal">
             LeetGuard combines smart detection with customizable blocking to
             create the perfect coding environment.
           </p>

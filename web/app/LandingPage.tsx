@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Features from "@/components/Features";
 import Testimonial from "@/components/Testimonial";
@@ -65,6 +66,174 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center pt-20 px-6">
+        {/* Floating Social Media Logos */}
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "15%", top: "40%" }}
+          animate={{
+            y: [0, -15, 0],
+            x: [0, 8, 0],
+            rotate: [0, 3, -3, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/instagram.svg"
+            alt="Instagram"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "85%", top: "50%" }}
+          animate={{
+            y: [0, -20, 0],
+            x: [0, -10, 0],
+            rotate: [0, -5, 5, 0],
+          }}
+          transition={{
+            duration: 8,
+            delay: 1,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/facebook.svg"
+            alt="Facebook"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "10%", top: "70%" }}
+          animate={{
+            y: [0, -18, 0],
+            x: [0, 12, 0],
+            rotate: [0, 4, -4, 0],
+          }}
+          transition={{
+            duration: 7,
+            delay: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/tiktok.svg"
+            alt="TikTok"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "75%", top: "75%" }}
+          animate={{
+            y: [0, -25, 0],
+            x: [0, -8, 0],
+            rotate: [0, -3, 3, 0],
+          }}
+          transition={{
+            duration: 9,
+            delay: 0.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/threads.svg"
+            alt="Threads"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "25%", top: "15%" }}
+          animate={{
+            y: [0, -22, 0],
+            x: [0, 15, 0],
+            rotate: [0, 6, -6, 0],
+          }}
+          transition={{
+            duration: 6.5,
+            delay: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/x.svg"
+            alt="X"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "75%", top: "20%" }}
+          animate={{
+            y: [0, -16, 0],
+            x: [0, -12, 0],
+            rotate: [0, -4, 4, 0],
+          }}
+          transition={{
+            duration: 8.5,
+            delay: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/snapchat.svg"
+            alt="Snapchat"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 hover:opacity-40 transition-opacity duration-300"
+          style={{ left: "30%", top: "90%" }}
+          animate={{
+            y: [0, -19, 0],
+            x: [0, 10, 0],
+            rotate: [0, 5, -5, 0],
+          }}
+          transition={{
+            duration: 7.5,
+            delay: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/reddit.svg"
+            alt="Reddit"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.div
@@ -96,7 +265,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-medium tracking-wide leading-relaxed"
+              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
               Your coding companion that rewards deep work and eliminates
               distractions.
