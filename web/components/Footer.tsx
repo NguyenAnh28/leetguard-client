@@ -1,4 +1,5 @@
 import { Twitter, Github, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 const quickLinks = [
   { name: "Features", href: "#features" },
@@ -21,9 +22,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-leet-yellow rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-sm">LG</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 relative">
+                <Image
+                  src="/leetguard-logo.svg"
+                  alt="LeetGuard Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full"
+                />
               </div>
               <span className="text-white font-semibold text-xl">
                 LeetGuard

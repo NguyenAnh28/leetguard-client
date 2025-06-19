@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +13,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-leet-yellow rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-sm">LG</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 relative">
+                <Image
+                  src="/leetguard-logo.svg"
+                  alt="LeetGuard Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full"
+                />
               </div>
               <span className="text-white font-semibold text-xl">
                 LeetGuard

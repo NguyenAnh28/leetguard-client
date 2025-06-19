@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "LeetGuard - Focus. Solve. Unlock your day.",
   description:
     "Your coding buddy that rewards you with breaks only when you've earned them.",
+  icons: {
+    icon: "/leetguard-logo.svg",
+    shortcut: "/leetguard-logo.svg",
+    apple: "/leetguard-logo.svg",
+  },
 };
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import { ArrowRight, Play } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -8,11 +9,26 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Focus. <span className="text-leet-yellow">Solve.</span> <br />
-                Unlock your day with{" "}
-                <span className="text-leet-yellow">LeetGuard.</span>
-              </h1>
+              {/* Logo and Title */}
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-16 h-16 relative">
+                  <Image
+                    src="/leetguard-logo.svg"
+                    alt="LeetGuard Logo"
+                    width={64}
+                    height={64}
+                    className="w-full h-full"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    Focus. <span className="text-leet-yellow">Solve.</span>{" "}
+                    <br />
+                    Unlock your day with{" "}
+                    <span className="text-leet-yellow">LeetGuard.</span>
+                  </h1>
+                </div>
+              </div>
 
               <p className="text-xl text-warm-gray-300 leading-relaxed max-w-2xl">
                 Your coding buddy that rewards you with breaks only when you've
