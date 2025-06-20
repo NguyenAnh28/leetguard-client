@@ -289,8 +289,12 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <Features />
-      <Testimonial />
+      <div id="features">
+        <Features />
+      </div>
+      <div id="testimonial">
+        <Testimonial />
+      </div>
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
-              <span className="text-xl font-bold text-white dark:text-white">
+              <span className="text-lg font-semibold text-white dark:text-white">
                 LeetGuard
               </span>
             </div>
@@ -110,20 +110,6 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center space-x-4">
-            <a
-              href="#github"
-              className="text-neutral-400 hover:text-white transition-colors duration-200"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="#twitter"
-              className="text-neutral-400 hover:text-white transition-colors duration-200"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
             <a
               href="#linkedin"
               className="text-neutral-400 hover:text-white transition-colors duration-200"
