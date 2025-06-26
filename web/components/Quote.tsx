@@ -2,7 +2,7 @@
 
 import { ArrowUpRight } from "lucide-react";
 
-export default function Testimonial() {
+export default function Quote() {
   return (
     <section className="pt-24 pb-40 px-6">
       <div className="max-w-4xl mx-auto text-center">

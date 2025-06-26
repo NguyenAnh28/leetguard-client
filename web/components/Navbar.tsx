@@ -28,7 +28,7 @@ export default function Navbar() {
               How It Works
             </a>
             <a
-              href="#testimonial"
+              href="#why-important"
               className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
             >
               Why It's Important

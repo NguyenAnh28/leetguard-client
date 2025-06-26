@@ -6,7 +6,7 @@ import { ArrowRight, Play, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Features from "@/components/Features";
-import Testimonial from "@/components/Testimonial";
+import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
@@ -75,8 +75,14 @@ export default function LandingPage() {
       <div id="features">
         <Features />
       </div>
-      <div id="testimonial">
-        <Testimonial />
+
+      {/* Separator Line */}
+      <div id="why-important" className="w-full flex justify-center py-8">
+        <div className="w-24 h-px"></div>
+      </div>
+
+      <div>
+        <Quote />
       </div>
       <Footer />
     </div>
