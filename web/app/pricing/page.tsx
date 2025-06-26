@@ -46,8 +46,7 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* Pricing Card Section */}
-      <div className="relative py-20 px-6">
+      <div className="relative -mt-32 pb-32 px-6">
         <div className="container mx-auto px-4">
           <div className="flex justify-center">
             <motion.div
@@ -56,45 +55,46 @@ export default function PricingPage() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="w-full max-w-md"
             >
-              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300">
                 <div className="text-center mb-8">
-                  <h3 className="text-3xl font-medium text-black mb-2">Free</h3>
-                  <div className="text-4xl font-medium text-black mb-1">$0</div>
-                  <div className="text-gray-600">per month</div>
+                  <h3 className="text-4xl font-medium text-black mb-2">Free</h3>
+                  <div className="text-4xl font-medium text-black">$0/mo</div>
                 </div>
 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start space-x-3">
                     <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">
+                    <span className="text-black font-normal">
                       Distraction blocker for coding sessions
                     </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">
+                    <span className="text-black font-normal">
                       Track problems solved & time spent
                     </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">
+                    <span className="text-black font-normal">
                       Daily streak & focus mode
                     </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">
+                    <span className="text-black font-normal">
                       Works offline, data stays on your device
                     </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Chrome & Edge support</span>
+                    <span className="text-black font-normal">
+                      Chrome & Edge support
+                    </span>
                   </div>
                 </div>
 
-                <button className="w-full inline-flex items-center justify-center px-8 py-4 h-14 rounded-lg bg-black text-white text-base font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm hover:shadow-md">
+                <button className="w-full inline-flex items-center justify-center px-8 py-4 h-14 rounded-lg bg-black text-white text-base font-medium transition-all duration-200 border border-gray-300 hover:border-gray-400 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-gray-300 mb-10">
                   <span>Install now</span>
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </button>
