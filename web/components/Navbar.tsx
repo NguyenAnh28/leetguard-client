@@ -23,29 +23,41 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
-              className="text-white hover:text-white hover:underline transition-colors duration-200 text-base font-normal"
+              className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
             >
-              Features
+              How It Works
             </a>
             <a
               href="#testimonial"
-              className="text-white hover:text-white hover:underline transition-colors duration-200 text-base font-normal"
+              className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
             >
-              Testimonial
+              Why It's Important
+            </a>
+            <a
+              href="#pricing"
+              className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
+            >
+              Pricing
+            </a>
+            <a
+              href="#careers"
+              className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
+            >
+              Careers
             </a>
           </div>
 
           {/* Right Side */}
           <div className="flex items-center space-x-4">
             {/* Login */}
-            <button className="text-white hover:text-white hover:underline transition-colors duration-200 text-base font-normal mr-4">
+            <button className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal mr-4">
               Login
             </button>
 
             {/* Sign Up */}
-            <button className="inline-flex items-center justify-center px-3 py-3 h-10 rounded-lg bg-black text-white text-base font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
+            <button className="inline-flex items-center justify-center px-2 py-2 h-8 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
               <span>Sign Up</span>
-              <ArrowUpRight className="w-4 h-4 ml-2" />
+              <ArrowUpRight className="w-3 h-3 ml-1" />
             </button>
           </div>
         </div>
