@@ -56,7 +56,7 @@ export default function CareersPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-white border border-black rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
+                className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
               >
                 <div className="mb-2 text-lg font-medium">
                   Founding Engineer
@@ -83,7 +83,7 @@ export default function CareersPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-white border border-black rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
+                className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
               >
                 <div className="mb-2 text-lg font-medium">Anything else</div>
                 <div className="flex items-center text-neutral-500 mb-2">

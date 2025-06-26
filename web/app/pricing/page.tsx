@@ -87,7 +87,7 @@ export default function PricingPage() {
               }}
               className="w-full max-w-md mt-4"
             >
-              <div className="bg-white border border-black rounded-2xl p-8 transition-all duration-300">
+              <div className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300">
                 <div className="text-center mb-8">
                   <h3 className="text-4xl font-medium text-black mb-2">Free</h3>
                   <div className="text-4xl font-medium text-black">
