@@ -59,13 +59,9 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-3 justify-center mt-12"
             >
-              <button className="inline-flex items-center justify-center px-8 py-4 h-14 rounded-lg bg-white text-black text-base font-medium hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md">
+              <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
                 <span>Start Your Focus Journey</span>
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
-              <button className="inline-flex items-center justify-center px-8 py-4 h-14 rounded-lg bg-black text-white text-base font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
-                <Play className="w-5 h-5 mr-2" />
-                <span>See How It Works</span>
               </button>
             </motion.div>
           </div>

@@ -85,7 +85,7 @@ export default function PricingPage() {
                 opacity: { duration: 0.6, delay: 0.4 },
                 y: { duration: 0.2, delay: 1.2 },
               }}
-              className="w-full max-w-md"
+              className="w-full max-w-md mt-4"
             >
               <div className="bg-white border border-black rounded-2xl p-8 transition-all duration-300">
                 <div className="text-center mb-8">
