@@ -4,9 +4,12 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(true);
+  const pathname = usePathname();
+  const isPricingPage = pathname === "/pricing";
 
   useEffect(() => {
     // Check if dark mode is enabled
@@ -41,8 +44,8 @@ export default function Navbar() {
 
           {/* Center Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#features"
+            <Link
+              href={isPricingPage ? "/#features" : "#features"}
               className={`${
                 isDark
                   ? "text-white hover:text-white"
@@ -50,9 +53,9 @@ export default function Navbar() {
               } hover:underline transition-colors duration-200 text-sm font-normal`}
             >
               How It Works
-            </a>
-            <a
-              href="#why-important"
+            </Link>
+            <Link
+              href={isPricingPage ? "/#why-important" : "#why-important"}
               className={`${
                 isDark
                   ? "text-white hover:text-white"
@@ -60,7 +63,7 @@ export default function Navbar() {
               } hover:underline transition-colors duration-200 text-sm font-normal`}
             >
               Why It's Important
-            </a>
+            </Link>
             <Link
               href="/pricing"
               className={`${
@@ -71,8 +74,8 @@ export default function Navbar() {
             >
               Pricing
             </Link>
-            <a
-              href="#careers"
+            <Link
+              href={isPricingPage ? "/#careers" : "#careers"}
               className={`${
                 isDark
                   ? "text-white hover:text-white"
@@ -80,7 +83,7 @@ export default function Navbar() {
               } hover:underline transition-colors duration-200 text-sm font-normal`}
             >
               Careers
-            </a>
+            </Link>
           </div>
 
           {/* Right Side */}
