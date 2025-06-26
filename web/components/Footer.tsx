@@ -31,7 +31,7 @@ export default function Footer() {
                 height={32}
               />
               <span
-                className={`text-lg font-semibold ${
+                className={`text-lg font-normal ${
                   isDark ? "text-white" : "text-black"
                 }`}
               >
@@ -41,7 +41,7 @@ export default function Footer() {
             <p
               className={`${
                 isDark ? "text-neutral-300" : "text-gray-600"
-              } max-w-md leading-relaxed font-medium`}
+              } max-w-md leading-relaxed font-light text-sm`}
             >
               Your coding companion that rewards deep work and eliminates
               distractions. Focus on what matters most.
@@ -53,7 +53,7 @@ export default function Footer() {
             <h3
               className={`${
                 isDark ? "text-white" : "text-black"
-              } font-semibold mb-4`}
+              } font-medium mb-4`}
             >
               Product
             </h3>
@@ -65,7 +65,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Features
                 </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Testimonial
                 </a>
@@ -89,7 +89,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Docs
                 </a>
@@ -101,7 +101,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   FAQ
                 </a>
@@ -114,7 +114,7 @@ export default function Footer() {
             <h3
               className={`${
                 isDark ? "text-white" : "text-black"
-              } font-semibold mb-4`}
+              } font-medium mb-4`}
             >
               Support
             </h3>
@@ -126,7 +126,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Contact
                 </a>
@@ -138,7 +138,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Privacy
                 </a>
@@ -150,7 +150,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200`}
+                  } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Terms
                 </a>
@@ -168,7 +168,7 @@ export default function Footer() {
           <p
             className={`${
               isDark ? "text-neutral-400" : "text-gray-500"
-            } text-sm mb-4 md:mb-0 font-medium`}
+            } text-sm mb-4 md:mb-0 font-light`}
           >
             © 2025 LeetGuard. All rights reserved.
           </p>
@@ -181,7 +181,7 @@ export default function Footer() {
                 isDark
                   ? "text-neutral-400 hover:text-white"
                   : "text-gray-500 hover:text-black"
-              } transition-colors duration-200`}
+              } transition-colors duration-200 text-sm`}
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
