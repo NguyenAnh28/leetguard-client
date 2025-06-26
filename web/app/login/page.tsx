@@ -188,7 +188,7 @@ export default function LoginPage() {
             <Button
               type="button"
               variant="outline"
-              className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 h-10 rounded-lg font-medium text-sm"
+              className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-black h-10 rounded-lg font-medium text-sm"
             >
               <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24">
                 <path
@@ -214,7 +214,7 @@ export default function LoginPage() {
             <Button
               type="button"
               variant="outline"
-              className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 h-10 rounded-lg font-medium text-sm"
+              className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-black h-10 rounded-lg font-medium text-sm"
             >
               <Github className="w-4 h-4 mr-2 text-black" />
               GitHub
