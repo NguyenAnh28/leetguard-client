@@ -29,7 +29,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto mt-48">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,6 +63,22 @@ export default function LandingPage() {
                 <span>Start Your Focus Journey</span>
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
+            </motion.div>
+
+            {/* Product Demo Image - Part of hero section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-12 flex justify-center"
+            >
+              <Image
+                src="/placeholder.jpeg"
+                alt="Product Demo"
+                width={800}
+                height={450}
+                className="rounded-2xl border border-white/20 shadow-2xl"
+              />
             </motion.div>
           </div>
         </div>
