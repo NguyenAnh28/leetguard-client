@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import NavbarDark from "@/components/NavbarDark";
 import Features from "@/components/Features";
 import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
@@ -24,7 +24,7 @@ export default function LandingPage() {
     <div className="relative min-h-screen text-white">
       <RaycastBackground />
 
-      <Navbar />
+      <NavbarDark />
 
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
@@ -56,7 +56,7 @@ export default function LandingPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-3 justify-center mt-12"
             >
               <button className="inline-flex items-center justify-center px-8 py-4 h-14 rounded-lg bg-white text-black text-base font-medium hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md">
