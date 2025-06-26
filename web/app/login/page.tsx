@@ -24,16 +24,16 @@ export default function LoginPage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-3">
               <Image
                 src="/leetguard-logo-black.svg"
                 alt="LeetGuard Logo"
-                width={32}
-                height={32}
+                width={40}
+                height={40}
               />
-              <span className="text-2xl font-normal text-black">LeetGuard</span>
+              <span className="text-3xl font-normal text-black">LeetGuard</span>
             </Link>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full border-gray-300 focus:border-black focus:ring-black text-sm h-9"
+                className="w-full border-gray-300 focus:border-black focus:ring-black text-sm h-9 text-black placeholder:text-gray-500"
               />
             </div>
 
@@ -110,7 +110,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full border-gray-300 focus:border-black focus:ring-black pr-10 text-sm h-9"
+                  className="w-full border-gray-300 focus:border-black focus:ring-black pr-10 text-sm h-9 text-black placeholder:text-gray-500"
                 />
                 <button
                   type="button"
