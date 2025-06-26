@@ -2,10 +2,23 @@
 
 import { Linkedin } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    // Check if dark mode is enabled
+    const isDarkMode = document.documentElement.classList.contains("dark");
+    setIsDark(isDarkMode);
+  }, []);
+
   return (
-    <footer className="border-t border-white/10 py-16 px-6">
+    <footer
+      className={`border-t ${
+        isDark ? "border-white/10" : "border-gray-200"
+      } py-16 px-6`}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
@@ -17,11 +30,19 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
-              <span className="text-lg font-semibold text-white dark:text-white">
+              <span
+                className={`text-lg font-semibold ${
+                  isDark ? "text-white" : "text-black"
+                }`}
+              >
                 LeetGuard
               </span>
             </div>
-            <p className="text-neutral-300 dark:text-neutral-300 max-w-md leading-relaxed font-medium">
+            <p
+              className={`${
+                isDark ? "text-neutral-300" : "text-gray-600"
+              } max-w-md leading-relaxed font-medium`}
+            >
               Your coding companion that rewards deep work and eliminates
               distractions. Focus on what matters most.
             </p>
@@ -29,14 +50,22 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-white dark:text-white font-semibold mb-4">
+            <h3
+              className={`${
+                isDark ? "text-white" : "text-black"
+              } font-semibold mb-4`}
+            >
               Product
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#features"
-                  className="text-neutral-300 dark:text-neutral-300 hover:text-white dark:hover:text-white transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } transition-colors duration-200`}
                 >
                   Features
                 </a>
@@ -44,7 +73,11 @@ export default function Footer() {
               <li>
                 <a
                   href="#testimonial"
-                  className="text-neutral-300 dark:text-neutral-300 hover:text-white dark:hover:text-white transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } transition-colors duration-200`}
                 >
                   Testimonial
                 </a>
@@ -52,7 +85,11 @@ export default function Footer() {
               <li>
                 <a
                   href="#docs"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } hover:underline transition-colors duration-200`}
                 >
                   Docs
                 </a>
@@ -60,7 +97,11 @@ export default function Footer() {
               <li>
                 <a
                   href="#faq"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } hover:underline transition-colors duration-200`}
                 >
                   FAQ
                 </a>
@@ -70,14 +111,22 @@ export default function Footer() {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-white dark:text-white font-semibold mb-4">
+            <h3
+              className={`${
+                isDark ? "text-white" : "text-black"
+              } font-semibold mb-4`}
+            >
               Support
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#contact"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } hover:underline transition-colors duration-200`}
                 >
                   Contact
                 </a>
@@ -85,7 +134,11 @@ export default function Footer() {
               <li>
                 <a
                   href="#privacy"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } hover:underline transition-colors duration-200`}
                 >
                   Privacy
                 </a>
@@ -93,7 +146,11 @@ export default function Footer() {
               <li>
                 <a
                   href="#terms"
-                  className="text-neutral-300 hover:text-white hover:underline transition-colors duration-200"
+                  className={`${
+                    isDark
+                      ? "text-neutral-300 hover:text-white"
+                      : "text-gray-600 hover:text-black"
+                  } hover:underline transition-colors duration-200`}
                 >
                   Terms
                 </a>
@@ -103,8 +160,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10">
-          <p className="text-neutral-400 text-sm mb-4 md:mb-0 font-medium">
+        <div
+          className={`flex flex-col md:flex-row justify-between items-center pt-8 border-t ${
+            isDark ? "border-white/10" : "border-gray-200"
+          }`}
+        >
+          <p
+            className={`${
+              isDark ? "text-neutral-400" : "text-gray-500"
+            } text-sm mb-4 md:mb-0 font-medium`}
+          >
             © 2025 LeetGuard. All rights reserved.
           </p>
 
@@ -112,7 +177,11 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <a
               href="#linkedin"
-              className="text-neutral-400 hover:text-white transition-colors duration-200"
+              className={`${
+                isDark
+                  ? "text-neutral-400 hover:text-white"
+                  : "text-gray-500 hover:text-black"
+              } transition-colors duration-200`}
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />

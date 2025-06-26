@@ -12,6 +12,9 @@ const config: Config = {
       fontSize: {
         '7.5xl': '5.25rem',
       },
+      letterSpacing: {
+        'super-tight': '-0.025em',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
