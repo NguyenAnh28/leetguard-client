@@ -38,7 +38,7 @@ export default function LandingPage() {
             >
               <span className="text-white">Focus. Solve.</span>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#4F8CFF] via-[#6FE7DD] to-[#FFC371] bg-clip-text text-transparent">
                 Unlock your day.
               </span>
             </motion.h1>

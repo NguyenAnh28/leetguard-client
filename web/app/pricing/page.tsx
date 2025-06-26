@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -14,12 +14,16 @@ export default function PricingPage() {
     localStorage.setItem("theme", "light");
   }, []);
 
+  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
+  const price = billing === "monthly" ? 0 : 0;
+  const priceLabel = billing === "monthly" ? "$0/mo" : "$0/yr";
+
   return (
     <div className="relative min-h-screen bg-white text-black">
       <NavbarLight />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
+      <div className="relative min-h-screen flex flex-col items-center justify-center px-6">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.h1
@@ -46,19 +50,49 @@ export default function PricingPage() {
         </div>
       </div>
 
-      <div className="relative -mt-40 pb-32 px-6">
+      <div className="relative -mt-48 pb-32 px-6">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center">
+            {/* Billing Toggle */}
+            <div className="mb-6 flex items-center">
+              <div className="flex border border-black rounded-full overflow-hidden">
+                <button
+                  className={`px-6 py-2 font-medium transition-colors duration-200 focus:outline-none ${
+                    billing === "monthly"
+                      ? "bg-black text-white"
+                      : "bg-white text-black"
+                  } rounded-l-full border-r border-black`}
+                  onClick={() => setBilling("monthly")}
+                >
+                  Monthly
+                </button>
+                <button
+                  className={`px-6 py-2 font-medium transition-colors duration-200 focus:outline-none ${
+                    billing === "yearly"
+                      ? "bg-black text-white"
+                      : "bg-white text-black"
+                  } rounded-r-full`}
+                  onClick={() => setBilling("yearly")}
+                >
+                  Yearly
+                </button>
+              </div>
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{
+                opacity: { duration: 0.6, delay: 0.4 },
+                y: { duration: 0.2, delay: 1.2 },
+              }}
               className="w-full max-w-md"
             >
               <div className="bg-white border border-black rounded-2xl p-8 transition-all duration-300">
                 <div className="text-center mb-8">
                   <h3 className="text-4xl font-medium text-black mb-2">Free</h3>
-                  <div className="text-4xl font-medium text-black">$0/mo</div>
+                  <div className="text-4xl font-medium text-black">
+                    {priceLabel}
+                  </div>
                 </div>
 
                 <div className="space-y-4 mb-8">
