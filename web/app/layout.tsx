@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/leetguard-logo-black.svg",
+        url: "/leetguard-logo-circle.svg",
         type: "image/svg+xml",
       },
     ],
     apple: [
       {
-        url: "/leetguard-logo-black.svg",
+        url: "/leetguard-logo-circle.svg",
         type: "image/svg+xml",
       },
     ],
