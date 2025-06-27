@@ -40,7 +40,7 @@ export default function LoginPage() {
       </div>
 
       {/* Main Content */}
-      <div className="flex min-h-screen items-center justify-center px-6 pt-20">
+      <div className="flex min-h-screen items-center justify-center px-6 pt-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function LoginPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl font-medium text-black mb-2"
+              className="text-3xl font-medium text-black mb-2"
             >
               Welcome to LeetGuard
             </motion.h1>
@@ -73,13 +73,13 @@ export default function LoginPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             onSubmit={handleSubmit}
-            className="space-y-4"
+            className="space-y-5"
           >
             {/* Email Field */}
-            <div className="space-y-1">
+            <div className="space-y-2">
               <label
                 htmlFor="email"
-                className="text-xs font-medium text-gray-700"
+                className="text-sm font-medium text-gray-700"
               >
                 Email
               </label>
@@ -90,15 +90,15 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full border-gray-300 focus:border-black focus:ring-black text-sm h-9 text-black placeholder:text-gray-500"
+                className="w-full border-gray-300 focus:border-black focus:ring-black text-base h-11 text-black placeholder:text-gray-500"
               />
             </div>
 
             {/* Password Field */}
-            <div className="space-y-1">
+            <div className="space-y-2">
               <label
                 htmlFor="password"
-                className="text-xs font-medium text-gray-700"
+                className="text-sm font-medium text-gray-700"
               >
                 Password
               </label>
@@ -110,7 +110,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full border-gray-300 focus:border-black focus:ring-black pr-10 text-sm h-9 text-black placeholder:text-gray-500"
+                  className="w-full border-gray-300 focus:border-black focus:ring-black pr-10 text-base h-11 text-black placeholder:text-gray-500"
                 />
                 <button
                   type="button"
@@ -118,9 +118,9 @@ export default function LoginPage() {
                   className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
                 >
                   {showPassword ? (
-                    <EyeOff className="w-3 h-3" />
+                    <EyeOff className="w-4 h-4" />
                   ) : (
-                    <Eye className="w-3 h-3" />
+                    <Eye className="w-4 h-4" />
                   )}
                 </button>
               </div>
@@ -134,18 +134,18 @@ export default function LoginPage() {
                   id="remember"
                   checked={rememberMe}
                   onChange={(e) => setRememberMe(e.target.checked)}
-                  className="w-3 h-3 border-2 border-black rounded-none checked:bg-black checked:border-black focus:ring-0 focus:ring-offset-0 cursor-pointer"
+                  className="w-4 h-4 border-2 border-black rounded-none checked:bg-black checked:border-black focus:ring-0 focus:ring-offset-0 cursor-pointer"
                 />
                 <label
                   htmlFor="remember"
-                  className="text-xs text-gray-600 cursor-pointer"
+                  className="text-sm text-gray-600 cursor-pointer"
                 >
                   Remember me
                 </label>
               </div>
               <Link
                 href="/forgot-password"
-                className="text-xs text-black font-medium hover:underline"
+                className="text-sm text-black font-medium hover:underline"
               >
                 Forgot password?
               </Link>
@@ -154,10 +154,10 @@ export default function LoginPage() {
             {/* Login Button */}
             <Button
               type="submit"
-              className="w-full bg-black text-white hover:bg-gray-800 h-10 rounded-lg font-medium text-sm"
+              className="w-full bg-black text-white hover:bg-gray-800 h-12 rounded-lg font-medium text-base"
             >
               <span>Sign In</span>
-              <ArrowRight className="ml-2 w-3 h-3" />
+              <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.form>
 

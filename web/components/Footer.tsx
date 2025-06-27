@@ -121,18 +121,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#contact"
-                  className={`${
-                    isDark
-                      ? "text-neutral-300 hover:text-white"
-                      : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
                 <Link
                   href="/privacy"
                   className={`${
@@ -177,13 +165,15 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex items-center space-x-4">
             <a
-              href="#linkedin"
+              href="https://www.linkedin.com/company/leetguard/"
               className={`${
                 isDark
                   ? "text-neutral-400 hover:text-white"
                   : "text-gray-500 hover:text-black"
               } transition-colors duration-200 text-sm`}
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="w-5 h-5" />
             </a>
