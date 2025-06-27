@@ -2,6 +2,7 @@
 
 import { Linkedin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
@@ -132,8 +133,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#privacy"
+                <Link
+                  href="/privacy"
                   className={`${
                     isDark
                       ? "text-neutral-300 hover:text-white"
@@ -141,11 +142,11 @@ export default function Footer() {
                   } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#terms"
+                <Link
+                  href="/terms"
                   className={`${
                     isDark
                       ? "text-neutral-300 hover:text-white"
@@ -153,7 +154,7 @@ export default function Footer() {
                   } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Terms
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

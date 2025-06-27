@@ -29,10 +29,10 @@ export default function NavbarDark() {
               How It Works
             </Link>
             <Link
-              href={"/#why-important"}
+              href="/why-it-matters"
               className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
             >
-              Why It's Important
+              Why It Matters
             </Link>
             <Link
               href="/pricing"

@@ -69,7 +69,7 @@ export default function CareersPage() {
                     height={20}
                     className="mr-2 inline-block align-middle"
                   />
-                  Based in the US
+                  US only
                 </div>
                 <div className="text-sm text-neutral-500">
                   Full-time • Remote
@@ -94,7 +94,7 @@ export default function CareersPage() {
                     height={20}
                     className="mr-2 inline-block align-middle"
                   />
-                  Based in the US
+                  US only
                 </div>
                 <div className="text-sm text-neutral-500">
                   Full-time • Remote
