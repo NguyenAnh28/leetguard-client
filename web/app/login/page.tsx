@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { ArrowRight, Eye, EyeOff, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,40 +40,19 @@ export default function LoginPage() {
 
       {/* Main Content */}
       <div className="flex min-h-screen items-center justify-center px-6 pt-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full max-w-sm"
-        >
+        <div className="w-full max-w-sm">
           {/* Welcome Text */}
           <div className="text-center mb-6">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-3xl font-medium text-black mb-2"
-            >
+            <h1 className="text-3xl font-medium text-black mb-2">
               Welcome to LeetGuard
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-sm text-gray-600"
-            >
+            </h1>
+            <p className="text-sm text-gray-600">
               Sign in to continue your focus journey
-            </motion.p>
+            </p>
           </div>
 
           {/* Login Form */}
-          <motion.form
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            onSubmit={handleSubmit}
-            className="space-y-5"
-          >
+          <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email Field */}
             <div className="space-y-2">
               <label
@@ -159,15 +137,10 @@ export default function LoginPage() {
               <span>Sign In</span>
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
-          </motion.form>
+          </form>
 
           {/* Divider */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative my-6"
-          >
+          <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-300" />
             </div>
@@ -176,15 +149,10 @@ export default function LoginPage() {
                 or continue with
               </span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Social Login Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-2 gap-2"
-          >
+          <div className="grid grid-cols-2 gap-2">
             <Button
               type="button"
               variant="outline"
@@ -210,26 +178,20 @@ export default function LoginPage() {
               </svg>
               Google
             </Button>
-
             <Button
               type="button"
               variant="outline"
               className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-black h-10 rounded-lg font-medium text-sm"
             >
-              <Github className="w-4 h-4 mr-2 text-black" />
+              <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
-          </motion.div>
+          </div>
 
           {/* Sign Up Link */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-center mt-6"
-          >
-            <p className="text-xs text-gray-600">
-              Don't have an account yet?{" "}
+          <div className="text-center mt-6">
+            <p className="text-sm text-gray-600">
+              Don't have an account?{" "}
               <Link
                 href="/signup"
                 className="text-black font-medium hover:underline"
@@ -237,8 +199,8 @@ export default function LoginPage() {
                 Sign up
               </Link>
             </p>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );
