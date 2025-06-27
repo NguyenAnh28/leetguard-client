@@ -60,8 +60,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#features"
+                <Link
+                  href="/#features"
                   className={`${
                     isDark
                       ? "text-neutral-300 hover:text-white"
@@ -69,19 +69,19 @@ export default function Footer() {
                   } hover:underline transition-colors duration-200 text-sm`}
                 >
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#testimonial"
+                <Link
+                  href="/why-it-matters"
                   className={`${
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
                   } hover:underline transition-colors duration-200 text-sm`}
                 >
-                  Testimonial
-                </a>
+                  Why It Matters
+                </Link>
               </li>
               <li>
                 <a

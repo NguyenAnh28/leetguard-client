@@ -29,8 +29,8 @@ export default function WhyItMattersPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl font-medium mb-12 leading-none py-1 tracking-super-tight"
             >
@@ -44,8 +44,8 @@ export default function WhyItMattersPage() {
             <div className="w-32 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto mb-12"></div>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-neutral-300 mb-12 max-w-3xl mx-auto font-normal tracking-wide leading-relaxed"
             >
@@ -58,8 +58,8 @@ export default function WhyItMattersPage() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 mb-12"
             >
@@ -79,8 +79,8 @@ export default function WhyItMattersPage() {
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="text-center mb-16"
           >
@@ -161,8 +161,8 @@ export default function WhyItMattersPage() {
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.8 }}
             className="text-center mb-16"
           >
@@ -178,8 +178,8 @@ export default function WhyItMattersPage() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 2.0 }}
               className="space-y-6"
             >
@@ -209,8 +209,8 @@ export default function WhyItMattersPage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 2.2 }}
               className="space-y-6"
             >
@@ -248,8 +248,8 @@ export default function WhyItMattersPage() {
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 2.4 }}
             className="text-center max-w-4xl mx-auto"
           >

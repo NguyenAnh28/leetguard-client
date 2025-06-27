@@ -62,7 +62,7 @@ export default function SignupPage() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="text-2xl font-medium text-black mb-2"
             >
               Welcome to LeetGuard
@@ -70,7 +70,7 @@ export default function SignupPage() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="text-sm text-gray-600"
             >
               Create your account to start your focus journey
@@ -187,7 +187,7 @@ export default function SignupPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="relative my-6"
           >
             <div className="absolute inset-0 flex items-center">
@@ -204,7 +204,7 @@ export default function SignupPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="grid grid-cols-2 gap-2"
           >
             <Button
@@ -247,7 +247,7 @@ export default function SignupPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="text-center mt-6"
           >
             <p className="text-xs text-gray-600">
