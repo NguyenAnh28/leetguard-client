@@ -26,24 +26,23 @@ A modern web application for LeetGuard - your coding companion that rewards deep
 ```
 leetguard-client/
 ├── extension/                 # Browser extension code
-├── web/                      # Main web application
-│   ├── app/                  # Next.js app directory
-│   │   ├── careers/          # Careers page
-│   │   ├── login/            # Authentication pages
-│   │   ├── signup/
-│   │   ├── pricing/          # Marketing pages
-│   │   ├── privacy/
-│   │   ├── terms/
-│   │   └── why-it-matters/
-│   ├── components/           # Reusable components
-│   │   ├── ui/              # Base UI components
-│   │   ├── Features.tsx     # Features section
-│   │   ├── Footer.tsx       # Footer with social links
-│   │   ├── Hero.tsx         # Landing page hero
-│   │   └── Navbar*.tsx      # Navigation components
-│   ├── hooks/               # Custom React hooks
-│   ├── lib/                 # Utility functions
-│   └── public/              # Static assets
+├── app/                      # Next.js app directory
+│   ├── careers/              # Careers page
+│   ├── login/                # Authentication pages
+│   ├── signup/
+│   ├── pricing/              # Marketing pages
+│   ├── privacy/
+│   ├── terms/
+│   └── why-it-matters/
+├── components/               # Reusable components
+│   ├── ui/                  # Base UI components
+│   ├── Features.tsx         # Features section
+│   ├── Footer.tsx           # Footer with social links
+│   ├── Hero.tsx             # Landing page hero
+│   └── Navbar*.tsx          # Navigation components
+├── hooks/                   # Custom React hooks
+├── lib/                     # Utility functions
+├── public/                  # Static assets
 └── README.md
 ```
 
@@ -66,7 +65,6 @@ cd leetguard-client
 2. Install dependencies:
 
 ```bash
-cd web
 npm install
 ```
 

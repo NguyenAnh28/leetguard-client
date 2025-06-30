@@ -39,7 +39,7 @@ export default function CareersPage() {
               className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
               No recruiters. No HR. You don't need a perfect resume - just a
-              willingness to ship.
+              willingness to contribute and share.
             </motion.p>
           </div>
         </div>
