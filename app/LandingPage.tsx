@@ -70,15 +70,39 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-12 flex justify-center"
+              className="mt-12 flex justify-center relative"
             >
-              <Image
-                src="/placeholder.jpeg"
-                alt="Product Demo"
-                width={800}
-                height={450}
-                className="rounded-2xl border border-white/20 shadow-2xl"
-              />
+              <div
+                className="overflow-hidden shadow-2xl relative"
+                style={{ height: "400px", width: "90vw", maxWidth: "1400px" }}
+              >
+                <Image
+                  src="/placeholder.gif"
+                  alt="Product Demo"
+                  width={1400}
+                  height={800}
+                  className="object-cover w-full h-full"
+                  style={{ marginTop: "-100px", marginBottom: "-100px" }}
+                />
+                {/* Logo and name overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <div
+                    className="flex items-center"
+                    style={{ transform: "translateY(-50px)" }}
+                  >
+                    <Image
+                      src="/leetguard-logo-circle.png"
+                      alt="LeetGuard Logo"
+                      width={80}
+                      height={80}
+                      className="mr-6"
+                    />
+                    <h2 className="text-6xl font-light text-white drop-shadow-lg">
+                      LeetGuard
+                    </h2>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
