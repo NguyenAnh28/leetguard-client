@@ -77,7 +77,7 @@ export default function LandingPage() {
                 style={{ height: "400px", width: "90vw", maxWidth: "1400px" }}
               >
                 <Image
-                  src="/placeholder.gif"
+                  src="/beach.gif"
                   alt="Product Demo"
                   width={1400}
                   height={800}
