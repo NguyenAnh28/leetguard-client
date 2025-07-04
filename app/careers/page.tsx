@@ -27,9 +27,9 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-7xl md:text-7xl font-medium mb-8 leading-none py-1 tracking-super-tight"
             >
-              <span className="text-black">Join our team.</span>
+              <span className="text-black">Join the team.</span>
               <br />
-              <span className="text-black">Help us protect focus.</span>
+              <span className="text-black">Help us create solutions.</span>
             </motion.h1>
 
             <motion.p
@@ -38,8 +38,8 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
-              No recruiters. No HR. You don't need a perfect resume - just a
-              willingness to contribute and share.
+              We're testing out problems. You don't need a perfect resume - just a
+              willingness to share and contribute.
             </motion.p>
           </div>
         </div>

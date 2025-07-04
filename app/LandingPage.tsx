@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { Chrome, Play, Sparkles } from "lucide-react";
 import Image from "next/image";
 import NavbarDark from "@/components/NavbarDark";
 import Features from "@/components/Features";
@@ -61,7 +61,7 @@ export default function LandingPage() {
             >
               <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
                 <span>Start Your Focus Journey</span>
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <Chrome className="ml-2 w-5 h-5" />
               </button>
             </motion.div>
 
