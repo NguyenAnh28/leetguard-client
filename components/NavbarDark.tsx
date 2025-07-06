@@ -44,7 +44,7 @@ export default function NavbarDark() {
               href="/careers"
               className="text-white hover:text-white hover:underline transition-colors duration-200 text-sm font-normal"
             >
-              Careers
+              Join Us
             </Link>
           </div>
 

@@ -44,7 +44,7 @@ export default function NavbarLight() {
               href="/careers"
               className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal"
             >
-              Careers
+              Join Us
             </Link>
           </div>
 
