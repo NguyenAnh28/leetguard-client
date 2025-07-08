@@ -38,7 +38,9 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
-              We're a small team of students who are passionate about building scalable solutions and systems. You don't need a perfect resume - just a willingness to share and contribute.
+              We're a small team of students who are passionate about building
+              scalable solutions and systems. You don't need a perfect resume -
+              just a willingness to share and contribute.
             </motion.p>
           </div>
         </div>
