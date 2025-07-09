@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Chrome, Play, Sparkles } from "lucide-react";
 import Image from "next/image";
 import NavbarDark from "@/components/NavbarDark";
@@ -10,7 +10,69 @@ import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
-  return <div className="fixed inset-0 -z-10 bg-black" />;
+  return (
+    <div className="fixed inset-0 -z-10 bg-gradient-to-br from-black via-slate-900 to-blue-950/30" />
+  );
+}
+
+function AnimatedText() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const texts = [
+    {
+      type: "logo",
+      content: "LeetGuard",
+      logo: true
+    },
+    {
+      type: "text", 
+      content: "The internet is loud."
+    },
+    {
+      type: "text",
+      content: "Every second counts."
+    },
+    {
+      type: "text",
+      content: "Focus on what matters."
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % texts.length);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [texts.length]);
+
+  const currentText = texts[currentIndex];
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentIndex}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center"
+      >
+        {currentText.logo && (
+          <Image
+            src="/leetguard-logo-circle.png"
+            alt="LeetGuard Logo"
+            width={80}
+            height={80}
+            className="mr-6"
+          />
+        )}
+        <h2 className="text-6xl font-light text-white drop-shadow-lg">
+          {currentText.content}
+        </h2>
+      </motion.div>
+    </AnimatePresence>
+  );
 }
 
 export default function LandingPage() {
@@ -73,7 +135,7 @@ export default function LandingPage() {
               className="mt-12 flex justify-center relative"
             >
               <div
-                className="overflow-hidden shadow-2xl relative"
+                className="overflow-hidden relative"
                 style={{ height: "400px", width: "90vw", maxWidth: "1400px" }}
               >
                 <Image
@@ -84,22 +146,13 @@ export default function LandingPage() {
                   className="object-cover w-full h-full"
                   style={{ marginTop: "-100px", marginBottom: "-100px" }}
                 />
-                {/* Logo and name overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                {/* Animated text overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
                   <div
                     className="flex items-center"
                     style={{ transform: "translateY(-50px)" }}
                   >
-                    <Image
-                      src="/leetguard-logo-circle.png"
-                      alt="LeetGuard Logo"
-                      width={80}
-                      height={80}
-                      className="mr-6"
-                    />
-                    <h2 className="text-6xl font-light text-white drop-shadow-lg">
-                      LeetGuard
-                    </h2>
+                    <AnimatedText />
                   </div>
                 </div>
               </div>
