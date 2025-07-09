@@ -88,7 +88,7 @@ export default function SecurityPage() {
                     </p>
                   </div>
                   <div className="border-t border-gray-200 pt-4 flex justify-end -mx-6 px-6">
-                    <button className="px-4 py-2 bg-white text-black text-sm font-medium border border-gray-300">
+                    <button className="px-4 py-2 bg-white text-black text-sm font-medium border border-gray-300 hover:text-gray-700 hover:border-gray-400 hover:shadow-md transition-colors duration-200">
                       Add new device
                     </button>
                   </div>
