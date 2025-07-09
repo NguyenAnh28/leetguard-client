@@ -12,19 +12,19 @@ export default function SecurityPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-[#FDFBF7] text-black">
       <div className="flex h-screen">
         <Sidebar activePage="settings-security" />
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col">
           {/* Header */}
-          <header className="h-32 flex items-center px-6">
+          <header className="h-32 flex items-center px-6 bg-white">
             <h1 className="text-4xl font-normal text-black">Settings</h1>
           </header>
 
           {/* Settings Navigation */}
-          <nav className="border-b border-gray-200 px-6">
+          <nav className="border-b border-gray-200 px-6 bg-white">
             <div className="flex space-x-8">
               <Link
                 href="/settings"
@@ -48,7 +48,7 @@ export default function SecurityPage() {
           </nav>
 
           {/* Content Area */}
-          <main className="flex-1 p-6">
+          <main className="flex-1 p-6 overflow-y-auto">
             <div className="flex justify-start">
               <div className="w-[768px]">
                 {/* Password Section */}

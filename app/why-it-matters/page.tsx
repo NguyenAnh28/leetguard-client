@@ -8,18 +8,18 @@ import NavbarDark from "@/components/NavbarDark";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
-  return <div className="fixed inset-0 -z-10 bg-black" />;
+  return <div className="fixed inset-0 -z-10 bg-[#F9F6F0]" />;
 }
 
 export default function WhyItMattersPage() {
   useEffect(() => {
-    // Set dark mode by default
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
+    // Set light mode by default
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   }, []);
 
   return (
-    <div className="relative min-h-screen text-white">
+    <div className="relative min-h-screen text-black">
       <RaycastBackground />
 
       <NavbarDark />
@@ -34,20 +34,18 @@ export default function WhyItMattersPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl font-medium mb-12 leading-none py-1 tracking-super-tight"
             >
-              <span className="text-white">Why Focus Matters</span>
+              <span className="text-black">Why Focus Matters</span>
               <br />
-              <span className="bg-gradient-to-r from-[#FF8C00] via-[#FF4500] to-[#DC143C] bg-clip-text text-transparent">
-                More Than Ever
-              </span>
+              <span className="text-black">More Than Ever</span>
             </motion.h1>
 
-            <div className="w-32 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto mb-12"></div>
+            <div className="w-32 h-px bg-gradient-to-r from-transparent via-black/20 to-transparent mx-auto mb-12"></div>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-300 mb-12 max-w-3xl mx-auto font-normal tracking-wide leading-relaxed"
+              className="text-xl text-neutral-900 mb-12 max-w-3xl mx-auto font-normal tracking-wide leading-relaxed"
             >
               In the fast-paced world of software engineering and job hunting,
               distractions are your biggest productivity killers. Between social
@@ -61,9 +59,9 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 mb-12"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-2xl p-8 mb-12"
             >
-              <p className="text-lg text-neutral-200 italic">
+              <p className="text-lg text-neutral-800 italic">
                 "Research shows that it takes over 20 minutes to fully regain
                 focus after a distraction.* This fragmented attention not only
                 slows progress but also increases frustration, stress, and
@@ -84,7 +82,7 @@ export default function WhyItMattersPage() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-white">
+            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               The Cost of Distraction
             </h2>
           </motion.div>
@@ -94,13 +92,13 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Clock className="w-12 h-12 text-[#4F8CFF] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-black mb-3">
                 Lost Productivity
               </h3>
-              <p className="text-neutral-300">
+              <p className="text-neutral-900">
                 Developers waste up to 2 hours daily switching between tasks and
                 recovering focus.
               </p>
@@ -110,13 +108,13 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Brain className="w-12 h-12 text-[#6FE7DD] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-black mb-3">
                 Decreased Learning
               </h3>
-              <p className="text-neutral-300">
+              <p className="text-neutral-900">
                 Interruptions impair your ability to absorb new coding concepts
                 and problem-solving strategies.
               </p>
@@ -126,13 +124,13 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.4 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Zap className="w-12 h-12 text-[#FFC371] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-black mb-3">
                 Higher Stress
               </h3>
-              <p className="text-neutral-300">
+              <p className="text-neutral-900">
                 Constantly battling distractions leads to mental fatigue and
                 burnout.
               </p>
@@ -142,13 +140,13 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Target className="w-12 h-12 text-[#FF6B6B] mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-black mb-3">
                 Missed Opportunities
               </h3>
-              <p className="text-neutral-300">
+              <p className="text-neutral-900">
                 A single lost moment could mean a missed bug, a botched
                 interview question, or a delayed project.
               </p>
@@ -166,10 +164,10 @@ export default function WhyItMattersPage() {
             transition={{ duration: 0.8, delay: 1.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-white">
+            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               LeetGuard's Mission
             </h2>
-            <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
+            <p className="text-xl text-neutral-900 max-w-3xl mx-auto">
               LeetGuard exists to help you take control back. By blocking
               distracting sites and apps during your focused sessions, LeetGuard
               creates a protected environment where you can:
@@ -188,10 +186,10 @@ export default function WhyItMattersPage() {
                   <span className="text-white font-semibold text-sm">1</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-black mb-2">
                     Sharpen your coding skills
                   </h3>
-                  <p className="text-neutral-300">Without interruptions</p>
+                  <p className="text-neutral-900">Without interruptions</p>
                 </div>
               </div>
 
@@ -200,10 +198,10 @@ export default function WhyItMattersPage() {
                   <span className="text-white font-semibold text-sm">2</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-black mb-2">
                     Prepare for interviews
                   </h3>
-                  <p className="text-neutral-300">With sustained focus</p>
+                  <p className="text-neutral-900">With sustained focus</p>
                 </div>
               </div>
             </motion.div>
@@ -219,10 +217,10 @@ export default function WhyItMattersPage() {
                   <span className="text-white font-semibold text-sm">3</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-black mb-2">
                     Boost productivity
                   </h3>
-                  <p className="text-neutral-300">And confidence</p>
+                  <p className="text-neutral-900">And confidence</p>
                 </div>
               </div>
 
@@ -231,10 +229,10 @@ export default function WhyItMattersPage() {
                   <span className="text-white font-semibold text-sm">4</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-black mb-2">
                     Maintain balance
                   </h3>
-                  <p className="text-neutral-300">
+                  <p className="text-neutral-900">
                     Healthier work-life balance
                   </p>
                 </div>
@@ -253,21 +251,21 @@ export default function WhyItMattersPage() {
             transition={{ duration: 0.8, delay: 2.4 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-white">
+            <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               Join Us in Defending Focus
             </h2>
-            <p className="text-xl text-neutral-300 mb-8 leading-relaxed">
+            <p className="text-xl text-neutral-900 mb-8 leading-relaxed">
               Every line of code, every solved problem, and every interview prep
               session matters. With LeetGuard, you're not just blocking
               distractions — you're investing in your growth, career, and peace
               of mind.
             </p>
-            <p className="text-2xl font-semibold text-white mb-12">
+            <p className="text-2xl font-semibold text-black mb-12">
               Together, let's build a future where focus wins.
             </p>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 max-w-2xl mx-auto">
-              <p className="text-sm text-neutral-400">
+            <div className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-2xl p-6 max-w-2xl mx-auto">
+              <p className="text-sm text-neutral-600">
                 * Source: An insightful ChatGPT conversation and a sprinkle of
                 coder magic, 2025
               </p>

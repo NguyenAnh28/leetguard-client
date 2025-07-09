@@ -37,7 +37,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
   );
 
   return (
-    <div className="w-64 bg-white border-r border-gray-200 flex flex-col">
+    <div className="w-64 bg-[#F9F6F0] border-r border-gray-200 flex flex-col">
       {/* Logo */}
       <div className="p-6">
         <Link href="/dashboard" className="flex items-center space-x-2">
@@ -57,7 +57,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           <Link
             href="/activity"
             className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
-              activePage === "activity" ? "bg-gray-100" : "hover:bg-gray-100"
+              activePage === "activity" ? "bg-[#E5E0D5]" : "hover:bg-[#E5E0D5]"
             }`}
           >
             <Activity className="w-5 h-5" />
@@ -66,7 +66,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           <Link
             href="/blocklist"
             className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
-              activePage === "blocklist" ? "bg-gray-100" : "hover:bg-gray-100"
+              activePage === "blocklist" ? "bg-[#E5E0D5]" : "hover:bg-[#E5E0D5]"
             }`}
           >
             <Shield className="w-5 h-5" />
@@ -75,7 +75,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           <Link
             href="/focus"
             className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
-              activePage === "focus" ? "bg-gray-100" : "hover:bg-gray-100"
+              activePage === "focus" ? "bg-[#E5E0D5]" : "hover:bg-[#E5E0D5]"
             }`}
           >
             <Clock className="w-5 h-5" />
@@ -91,8 +91,8 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                 activePage === "settings-profile" ||
                 activePage === "settings-security" ||
                 activePage === "settings-data"
-                  ? "bg-gray-100"
-                  : "hover:bg-gray-100"
+                  ? "bg-[#E5E0D5]"
+                  : "hover:bg-[#E5E0D5]"
               }`}
             >
               <Settings className="w-5 h-5" />
@@ -106,8 +106,8 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                   className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings" ||
                     activePage === "settings-profile"
-                      ? "bg-gray-100 text-black"
-                      : "text-black hover:bg-gray-100"
+                      ? "bg-[#E5E0D5] text-black"
+                      : "text-black hover:bg-[#E5E0D5]"
                   }`}
                 >
                   <User className="w-4 h-4" />
@@ -117,8 +117,8 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                   href="/settings/security"
                   className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings-security"
-                      ? "bg-gray-100 text-black"
-                      : "text-black hover:bg-gray-100"
+                      ? "bg-[#E5E0D5] text-black"
+                      : "text-black hover:bg-[#E5E0D5]"
                   }`}
                 >
                   <Lock className="w-4 h-4" />
@@ -128,8 +128,8 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                   href="/settings/data"
                   className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings-data"
-                      ? "bg-gray-100 text-black"
-                      : "text-black hover:bg-gray-100"
+                      ? "bg-[#E5E0D5] text-black"
+                      : "text-black hover:bg-[#E5E0D5]"
                   }`}
                 >
                   <Shield className="w-4 h-4" />
@@ -137,7 +137,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                 </Link>
                 <Link
                   href="/signout"
-                  className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 transition-colors duration-200"
+                  className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-[#E5E0D5] transition-colors duration-200"
                 >
                   <LogOut className="w-4 h-4" />
                   <span className="font-normal text-xs">Sign Out</span>
@@ -152,7 +152,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
       <div className="p-4">
         <Link
           href="#"
-          className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 transition-colors duration-200"
+          className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-[#E5E0D5] transition-colors duration-200"
         >
           <HelpCircle className="w-5 h-5" />
           <span className="font-normal text-sm">Help Center</span>

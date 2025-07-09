@@ -98,7 +98,7 @@ export default function PricingPage() {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start space-x-3">
                     <Check
-                      className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-black mt-0.5 flex-shrink-0"
                       strokeWidth={4}
                     />
                     <span className="text-black font-normal">
@@ -107,7 +107,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check
-                      className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-black mt-0.5 flex-shrink-0"
                       strokeWidth={4}
                     />
                     <span className="text-black font-normal">
@@ -116,7 +116,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check
-                      className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-black mt-0.5 flex-shrink-0"
                       strokeWidth={4}
                     />
                     <span className="text-black font-normal">
@@ -125,7 +125,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check
-                      className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-black mt-0.5 flex-shrink-0"
                       strokeWidth={4}
                     />
                     <span className="text-black font-normal">
@@ -134,7 +134,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Check
-                      className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-black mt-0.5 flex-shrink-0"
                       strokeWidth={4}
                     />
                     <span className="text-black font-normal">

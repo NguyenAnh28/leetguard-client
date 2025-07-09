@@ -22,18 +22,20 @@ export default function TermsOfService() {
           <div className="space-y-8">
             {/* Introduction */}
             <section>
-              <p className="text-black leading-relaxed">
-                LeetGuard, Inc., a corporation registered in [Your
-                Jurisdiction], with registered address at [Your Address]
-                ("LeetGuard," "we," "us," or "our"), provides its services (the
-                "Service") to you through its website located at
-                www.leetguard.com (the "Site") and related services
-                (collectively, the "Services"), subject to the following Terms
-                of Service ("Terms"). We may update these Terms from time to
-                time in accordance with the section titled "Modifications"
-                below. Your continued use of the Service constitutes your
-                acceptance of the updated Terms.
-              </p>
+              <div className="bg-[#F9F6F0] border border-black rounded-lg p-6 mb-6">
+                <p className="text-black leading-relaxed">
+                  LeetGuard, Inc., a corporation registered in [Your
+                  Jurisdiction], with registered address at [Your Address]
+                  ("LeetGuard," "we," "us," or "our"), provides its services (the
+                  "Service") to you through its website located at
+                  www.leetguard.com (the "Site") and related services
+                  (collectively, the "Services"), subject to the following Terms
+                  of Service ("Terms"). We may update these Terms from time to
+                  time in accordance with the section titled "Modifications"
+                  below. Your continued use of the Service constitutes your
+                  acceptance of the updated Terms.
+                </p>
+              </div>
             </section>
 
             {/* Section I */}

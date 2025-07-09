@@ -22,15 +22,17 @@ export default function PrivacyPolicy() {
           <div className="space-y-8">
             {/* Introduction */}
             <section>
-              <p className="text-black leading-relaxed">
-                LeetGuard, Inc. ("LeetGuard," "we," "us," or "our") values your
-                privacy. This Privacy Policy describes how we collect, use, and
-                protect your information when you use our website located at
-                www.leetguard.com (the "Site") and our related services
-                (collectively, the "Services"). By accessing or using the
-                Services, you agree to the collection and use of information in
-                accordance with this policy.
-              </p>
+              <div className="bg-[#F9F6F0] border border-black rounded-lg p-6 mb-6">
+                <p className="text-black leading-relaxed">
+                  LeetGuard, Inc. ("LeetGuard," "we," "us," or "our") values your
+                  privacy. This Privacy Policy describes how we collect, use, and
+                  protect your information when you use our website located at
+                  www.leetguard.com (the "Site") and our related services
+                  (collectively, the "Services"). By accessing or using the
+                  Services, you agree to the collection and use of information in
+                  accordance with this policy.
+                </p>
+              </div>
             </section>
 
             {/* Section I */}

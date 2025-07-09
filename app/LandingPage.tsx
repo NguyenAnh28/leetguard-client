@@ -10,7 +10,7 @@ import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
-  return <div className="fixed inset-0 -z-10 bg-black" />;
+  return <div className="fixed inset-0 -z-10 bg-[#F9F6F0]" />;
 }
 
 function AnimatedText() {
@@ -65,7 +65,7 @@ function AnimatedText() {
             className="mr-6"
           />
         )}
-        <h2 className="text-6xl font-light text-white drop-shadow-lg">
+        <h2 className="text-6xl font-light text-black drop-shadow-lg">
           {currentText.content}
         </h2>
       </motion.div>
@@ -75,13 +75,13 @@ function AnimatedText() {
 
 export default function LandingPage() {
   useEffect(() => {
-    // Set dark mode by default
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
+    // Set light mode by default
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   }, []);
 
   return (
-    <div className="relative min-h-screen text-white">
+    <div className="relative min-h-screen text-black">
       <RaycastBackground />
 
       <NavbarDark />
@@ -96,18 +96,16 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-7xl md:text-7.5xl font-medium mb-8 leading-none py-1 tracking-super-tight"
             >
-              <span className="text-white">Focus. Solve.</span>
+              <span className="text-black">Focus. Solve.</span>
               <br />
-              <span className="bg-gradient-to-r from-[#4F8CFF] via-[#6FE7DD] to-[#FFC371] bg-clip-text text-transparent">
-                Unlock your day.
-              </span>
+              <span className="text-black">Unlock your day.</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-100 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
+              className="text-xl text-neutral-900 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
               LeetGuard is a browser extension that blocks distractions and
               tracks your coding interview practice.
@@ -119,7 +117,7 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-3 justify-center mt-12"
             >
-              <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-white/20 hover:border-white/50 hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-white/30">
+              <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-black/20 hover:border-black/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30">
                 <span>Start Your Focus Journey</span>
                 <Chrome className="ml-2 w-5 h-5" />
               </button>
