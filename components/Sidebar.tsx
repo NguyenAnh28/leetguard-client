@@ -56,7 +56,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
         <nav className="space-y-2">
           <Link
             href="/activity"
-            className={`flex items-center space-x-3 px-3 py-2 text-black rounded-lg transition-colors duration-200 ${
+            className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
               activePage === "activity" ? "bg-gray-100" : "hover:bg-gray-100"
             }`}
           >
@@ -65,7 +65,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           </Link>
           <Link
             href="/blocklist"
-            className={`flex items-center space-x-3 px-3 py-2 text-black rounded-lg transition-colors duration-200 ${
+            className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
               activePage === "blocklist" ? "bg-gray-100" : "hover:bg-gray-100"
             }`}
           >
@@ -74,7 +74,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           </Link>
           <Link
             href="/focus"
-            className={`flex items-center space-x-3 px-3 py-2 text-black rounded-lg transition-colors duration-200 ${
+            className={`flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
               activePage === "focus" ? "bg-gray-100" : "hover:bg-gray-100"
             }`}
           >
@@ -86,7 +86,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
           <div>
             <Link
               href="/settings"
-              className={`w-full flex items-center space-x-3 px-3 py-2 text-black rounded-lg transition-colors duration-200 ${
+              className={`w-full flex items-center space-x-3 px-3 py-2 text-black transition-colors duration-200 ${
                 activePage === "settings" ||
                 activePage === "settings-profile" ||
                 activePage === "settings-security" ||
@@ -103,7 +103,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
               <div className="ml-8 mt-2 space-y-1">
                 <Link
                   href="/settings"
-                  className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-200 ${
+                  className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings" ||
                     activePage === "settings-profile"
                       ? "bg-gray-100 text-black"
@@ -115,7 +115,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                 </Link>
                 <Link
                   href="/settings/security"
-                  className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-200 ${
+                  className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings-security"
                       ? "bg-gray-100 text-black"
                       : "text-black hover:bg-gray-100"
@@ -126,7 +126,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                 </Link>
                 <Link
                   href="/settings/data"
-                  className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-200 ${
+                  className={`flex items-center space-x-3 px-3 py-2 transition-colors duration-200 ${
                     activePage === "settings-data"
                       ? "bg-gray-100 text-black"
                       : "text-black hover:bg-gray-100"
@@ -137,7 +137,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
                 </Link>
                 <Link
                   href="/signout"
-                  className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 rounded-lg transition-colors duration-200"
+                  className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 transition-colors duration-200"
                 >
                   <LogOut className="w-4 h-4" />
                   <span className="font-normal text-xs">Sign Out</span>
@@ -152,7 +152,7 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
       <div className="p-4">
         <Link
           href="#"
-          className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 rounded-lg transition-colors duration-200"
+          className="flex items-center space-x-3 px-3 py-2 text-black hover:bg-gray-100 transition-colors duration-200"
         >
           <HelpCircle className="w-5 h-5" />
           <span className="font-normal text-sm">Help Center</span>
