@@ -10,32 +10,30 @@ import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
 function RaycastBackground() {
-  return (
-    <div className="fixed inset-0 -z-10 bg-gradient-to-br from-black via-slate-900 to-blue-950/30" />
-  );
+  return <div className="fixed inset-0 -z-10 bg-black" />;
 }
 
 function AnimatedText() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const texts = [
     {
       type: "logo",
       content: "LeetGuard",
-      logo: true
-    },
-    {
-      type: "text", 
-      content: "The internet is loud."
+      logo: true,
     },
     {
       type: "text",
-      content: "Every second counts."
+      content: "The internet is loud.",
     },
     {
       type: "text",
-      content: "Focus on what matters."
-    }
+      content: "Every second counts.",
+    },
+    {
+      type: "text",
+      content: "Focus on what matters.",
+    },
   ];
 
   useEffect(() => {
