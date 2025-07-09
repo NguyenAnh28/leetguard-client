@@ -49,14 +49,53 @@ export default function SettingsPage() {
 
           {/* Content Area */}
           <main className="flex-1 p-6">
-            <div className="flex justify-center">
-              <div className="text-center">
-                <h2 className="text-4xl font-medium text-black mb-4">
-                  Personal Profile
-                </h2>
-                <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto font-normal">
-                  Update your personal information and profile details.
-                </p>
+            <div className="flex justify-start">
+              <div className="w-[768px]">
+                {/* Display Name Section */}
+                <div className="bg-white border border-gray-400 p-6 mb-6">
+                  <div className="mb-4">
+                    <h3 className="text-xl font-medium text-black mb-2">
+                      Display name
+                    </h3>
+                    <p className="text-black text-sm leading-relaxed mb-4">
+                      Please enter your full name, or a display name you are
+                      comfortable with.
+                    </p>
+                    <input
+                      type="text"
+                      placeholder="Enter your display name"
+                      maxLength={32}
+                      className="w-96 border border-gray-300 px-4 py-2 text-black placeholder-gray-500 focus:outline-none focus:border-gray-400"
+                    />
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 flex justify-between items-center -mx-6 px-6">
+                    <p className="text-black text-sm">
+                      Please use 32 characters at maximum
+                    </p>
+                    <button className="px-4 py-2 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors duration-200">
+                      Change
+                    </button>
+                  </div>
+                </div>
+
+                {/* Delete Account Section */}
+                <div className="bg-white border border-red-500 p-6">
+                  <div className="mb-4">
+                    <h3 className="text-xl font-medium text-black mb-2">
+                      Delete account
+                    </h3>
+                    <p className="text-black text-sm leading-relaxed">
+                      This action cannot be undone. Your focus stats, blocked
+                      sites, and account details will be removed from our system
+                      completely.
+                    </p>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 flex justify-end -mx-6 px-6">
+                    <button className="px-4 py-2 bg-red-600 text-white text-white text-sm font-medium hover:bg-red-700 transition-colors duration-200">
+                      Delete
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </main>

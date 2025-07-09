@@ -49,14 +49,50 @@ export default function SecurityPage() {
 
           {/* Content Area */}
           <main className="flex-1 p-6">
-            <div className="flex justify-center">
-              <div className="text-center">
-                <h2 className="text-4xl font-medium text-black mb-4">
-                  Security & Access
-                </h2>
-                <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto font-normal">
-                  Manage your account security and access permissions.
-                </p>
+            <div className="flex justify-start">
+              <div className="w-[768px]">
+                {/* Password Section */}
+                <div className="bg-white border border-gray-400 p-6 w-full mb-6">
+                  <div className="mb-4">
+                    <h3 className="text-xl font-medium text-black mb-2">
+                      Password
+                    </h3>
+                    <p className="text-black text-sm leading-relaxed mb-4">
+                      Make sure your new password is strong and secure.
+                    </p>
+                    <input
+                      type="password"
+                      placeholder="Enter your new password"
+                      className="w-96 border border-gray-300 px-4 py-2 text-black placeholder-gray-500 focus:outline-none focus:border-gray-400"
+                    />
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 flex justify-between items-center -mx-6 px-6">
+                    <p className="text-black text-sm">
+                      Must be at least 8 characters
+                    </p>
+                    <button className="px-4 py-2 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors duration-200">
+                      Change
+                    </button>
+                  </div>
+                </div>
+
+                {/* Multi-factor Authentication Section */}
+                <div className="bg-white border border-gray-400 p-6 w-full opacity-60 blur-[1px] pointer-events-none">
+                  <div className="mb-4">
+                    <h3 className="text-xl font-medium text-black mb-2">
+                      Multi-factor authentication
+                    </h3>
+                    <p className="text-black text-sm leading-relaxed mb-4">
+                      Add an additional layer of security to your account by
+                      requiring more than just a password to sign in
+                    </p>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 flex justify-end -mx-6 px-6">
+                    <button className="px-4 py-2 bg-white text-black text-sm font-medium border border-gray-300">
+                      Add new device
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </main>
