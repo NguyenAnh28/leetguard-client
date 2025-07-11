@@ -4,14 +4,10 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Chrome, Play, Sparkles } from "lucide-react";
 import Image from "next/image";
-import NavbarDark from "@/components/NavbarDark";
+import NavbarLight from "@/components/NavbarLight";
 import Features from "@/components/Features";
 import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
-
-function RaycastBackground() {
-  return <div className="fixed inset-0 -z-10 bg-[#F9F6F0]" />;
-}
 
 function AnimatedText() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +35,7 @@ function AnimatedText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % texts.length);
-    }, 5000); // Change every 5 seconds
+    }, 2500); // Change every 2.5 seconds
 
     return () => clearInterval(interval);
   }, [texts.length]);
@@ -53,7 +49,7 @@ function AnimatedText() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
         className="flex items-center"
       >
         {currentText.logo && (
@@ -81,10 +77,8 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen text-black">
-      <RaycastBackground />
-
-      <NavbarDark />
+    <div className="relative min-h-screen bg-white text-black">
+      <NavbarLight />
 
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">

@@ -4,12 +4,10 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Target, Clock, Brain, Zap, Shield } from "lucide-react";
 import Link from "next/link";
-import NavbarDark from "@/components/NavbarDark";
+import NavbarLight from "@/components/NavbarLight";
 import Footer from "@/components/Footer";
 
-function RaycastBackground() {
-  return <div className="fixed inset-0 -z-10 bg-[#F9F6F0]" />;
-}
+
 
 export default function WhyItMattersPage() {
   useEffect(() => {
@@ -19,10 +17,8 @@ export default function WhyItMattersPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen text-black">
-      <RaycastBackground />
-
-      <NavbarDark />
+    <div className="relative min-h-screen bg-white text-black">
+      <NavbarLight />
 
       {/* Hero Section */}
       <div className="relative px-6 pb-16 pt-32">

@@ -41,7 +41,7 @@ export default function Features() {
             return (
               <div
                 key={index}
-                className="bg-white/5 dark:bg-white/20 backdrop-blur-sm border border-black/10 rounded-xl p-8"
+                className="border border-black/10 rounded-xl p-8"
               >
                 <div className="bg-black p-3 rounded-xl w-fit mb-6">
                   <IconComponent className="w-6 h-6 text-white" />
