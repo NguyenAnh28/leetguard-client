@@ -8,66 +8,7 @@ import NavbarLight from "@/components/NavbarLight";
 import Features from "@/components/Features";
 import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
-
-function AnimatedText() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const texts = [
-    {
-      type: "logo",
-      content: "LeetGuard",
-      logo: true,
-    },
-    {
-      type: "text",
-      content: "The internet is loud.",
-    },
-    {
-      type: "text",
-      content: "Every second counts.",
-    },
-    {
-      type: "text",
-      content: "Focus on what matters.",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % texts.length);
-    }, 2500); // Change every 2.5 seconds
-
-    return () => clearInterval(interval);
-  }, [texts.length]);
-
-  const currentText = texts[currentIndex];
-
-  return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={currentIndex}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.3 }}
-        className="flex items-center"
-      >
-        {currentText.logo && (
-          <Image
-            src="/leetguard-logo-circle.png"
-            alt="LeetGuard Logo"
-            width={80}
-            height={80}
-            className="mr-6"
-          />
-        )}
-        <h2 className="text-6xl font-light text-black drop-shadow-lg">
-          {currentText.content}
-        </h2>
-      </motion.div>
-    </AnimatePresence>
-  );
-}
+import LogoCarousel from "@/components/LogoCarousel";
 
 export default function LandingPage() {
   useEffect(() => {
@@ -83,7 +24,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center max-w-4xl mx-auto mt-48">
+          <div className="text-center max-w-4xl mx-auto mt-16">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -116,40 +57,12 @@ export default function LandingPage() {
                 <Chrome className="ml-2 w-5 h-5" />
               </button>
             </motion.div>
-
-            {/* Product Demo Image - Part of hero section */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-12 flex justify-center relative"
-            >
-              <div
-                className="overflow-hidden relative"
-                style={{ height: "400px", width: "90vw", maxWidth: "1400px" }}
-              >
-                <Image
-                  src="/beach.gif"
-                  alt="Product Demo"
-                  width={1400}
-                  height={800}
-                  className="object-cover w-full h-full"
-                  style={{ marginTop: "-100px", marginBottom: "-100px" }}
-                />
-                {/* Animated text overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div
-                    className="flex items-center"
-                    style={{ transform: "translateY(-50px)" }}
-                  >
-                    <AnimatedText />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
+
+      {/* Logo Carousel */}
+      <LogoCarousel />
 
       <div id="features">
         <Features />
