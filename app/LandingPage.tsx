@@ -22,9 +22,9 @@ export default function LandingPage() {
       <NavbarLight />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
+      <div className="relative min-h-screen flex items-center justify-center pt-2 px-6">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center max-w-4xl mx-auto mt-16">
+          <div className="text-center max-w-4xl mx-auto mt-4">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-12"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-6"
             >
               <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-black/20 hover:border-black/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30">
                 <span>Start Your Focus Journey</span>
@@ -60,6 +60,22 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      {/* Demo Image Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        <Image
+          src="/demo.png"
+          alt="Demo"
+          width={1600}
+          height={500}
+          className="w-full max-w-5xl h-[500px] shadow-lg object-cover object-top mx-auto mt-[-7rem] mb-12 z-20 relative"
+          priority
+        />
+      </motion.div>
 
       {/* Logo Carousel */}
       <LogoCarousel />
