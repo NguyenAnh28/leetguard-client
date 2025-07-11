@@ -22,7 +22,7 @@ export default function LandingPage() {
       <NavbarLight />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center pt-2 px-6">
+      <div className="relative min-h-screen flex items-center justify-center pt-10 px-6">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto mt-4">
             <motion.h1
@@ -72,7 +72,7 @@ export default function LandingPage() {
           alt="Demo"
           width={1600}
           height={500}
-          className="w-full max-w-5xl h-[500px] shadow-lg object-cover object-top mx-auto mt-[-7rem] mb-12 z-20 relative"
+          className="w-full max-w-5xl h-[500px] shadow-lg object-cover object-top mx-auto mt-[-7rem] mb-12 z-20 relative border border-gray-200"
           priority
         />
       </motion.div>
