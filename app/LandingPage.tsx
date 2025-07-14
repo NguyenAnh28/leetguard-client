@@ -42,8 +42,7 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-neutral-900 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
             >
-              LeetGuard is a browser extension that blocks distractions and
-              tracks your coding interview practice.
+              A browser extension that blocks your distractions while you do your coding interview preperation.
             </motion.p>
 
             <motion.div
