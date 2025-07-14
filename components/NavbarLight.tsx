@@ -24,25 +24,25 @@ export default function NavbarLight() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href={"/#features"}
-              className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal"
+              className="text-black hover:text-black hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm font-medium"
             >
               How It Works
             </Link>
             <Link
               href="/why-it-matters"
-              className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal"
+              className="text-black hover:text-black hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm font-medium"
             >
               Why It Matters
             </Link>
             <Link
               href="/pricing"
-              className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal"
+              className="text-black hover:text-black hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm font-medium"
             >
               Pricing
             </Link>
             <Link
               href="/careers"
-              className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal"
+              className="text-black hover:text-black hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm font-medium"
             >
               Join Us
             </Link>
@@ -53,7 +53,7 @@ export default function NavbarLight() {
             {/* Login */}
             <Link
               href="/login"
-              className="text-black hover:text-black hover:underline transition-colors duration-200 text-sm font-normal mr-4"
+              className="text-black hover:text-black hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm font-medium mr-4"
             >
               Login
             </Link>

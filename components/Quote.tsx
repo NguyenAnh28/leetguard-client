@@ -12,8 +12,7 @@ export default function Quote() {
         </blockquote>
         <Link href="/why-it-matters">
           <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-black/20 hover:border-black/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30">
-            <span>Why It Matters</span>
-            <ArrowUpRight className="w-4 h-4 ml-2" />
+            <span>Why It Matters ↗</span>
           </button>
         </Link>
       </div>

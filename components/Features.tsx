@@ -1,60 +1,36 @@
 "use client";
 
-import { Zap, Shield, Unlock } from "lucide-react";
-
-const features = [
-  {
-    icon: Zap,
-    title: "Smart Problem Detection",
-    description: "Automatically detects solved LeetCode problems in real-time.",
-  },
-  {
-    icon: Shield,
-    title: "Custom Site Blocking",
-    description: "Choose which sites to block to maximize your focus.",
-  },
-  {
-    icon: Unlock,
-    title: "Instant Unlock",
-    description:
-      "Unlock distracting sites only when you've earned it by solving.",
-  },
-];
+import Image from "next/image";
 
 export default function Features() {
   return (
     <section id="features" className="pt-32 pb-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-medium text-black dark:text-black mb-6">
-            Built for Focused Developers
-          </h2>
-          <p className="text-xl text-neutral-900 dark:text-neutral-900 max-w-2xl mx-auto font-normal">
-            LeetGuard combines smart detection with customizable blocking to
-            create the perfect coding environment.
-          </p>
-        </div>
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Left side - Header and Subheader */}
+          <div className="flex-1 text-left flex flex-col justify-center">
+            <h2 className="text-7xl md:text-7.5xl font-medium text-black dark:text-black mb-8 leading-none py-1 tracking-super-tight">
+              Built for Focused Coders.
+            </h2>
+            <p className="text-xl text-neutral-900 dark:text-neutral-900 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed">
+              LeetCode is not boring, you're just not focused. Take back control
+              today.
+            </p>
+            <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-black/20 hover:border-black/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30 mt-8 w-fit">
+              See How It Works →
+            </button>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div
-                key={index}
-                className="border border-black/10 rounded-xl p-8"
-              >
-                <div className="bg-black p-3 rounded-xl w-fit mb-6">
-                  <IconComponent className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-2xl font-medium text-black dark:text-black mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-neutral-900 dark:text-neutral-900 leading-relaxed font-medium">
-                  {feature.description}
-                </p>
-              </div>
-            );
-          })}
+          {/* Right side - Demo Image */}
+          <div className="flex-2 flex justify-end">
+            <Image
+              src="/demo2.png"
+              alt="LeetGuard Demo"
+              width={1000}
+              height={750}
+              className="shadow-lg border border-gray-200"
+            />
+          </div>
         </div>
       </div>
     </section>
