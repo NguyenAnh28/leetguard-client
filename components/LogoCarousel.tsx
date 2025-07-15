@@ -48,7 +48,7 @@ export default function LogoCarousel() {
                     : company.name === "Google"
                     ? "h-10"
                     : "h-8"
-                } w-auto object-contain opacity-80`}
+                } w-auto object-contain opacity-100`}
               />
             </div>
           ))}

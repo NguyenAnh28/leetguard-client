@@ -100,48 +100,54 @@ export default function Sidebar({ activePage = "dashboard" }: SidebarProps) {
             </Link>
 
             {settingsExpanded && (
-              <div className="ml-6 mt-1 space-y-0.5">
-                <Link
-                  href="/settings"
-                  className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
-                    activePage === "settings" ||
-                    activePage === "settings-profile"
-                      ? "bg-[#E5E0D5] text-black"
-                      : "text-black hover:bg-[#E5E0D5]"
-                  }`}
-                >
-                  <User className="w-3 h-3" />
-                  <span className="font-normal text-xs">Personal Profile</span>
-                </Link>
-                <Link
-                  href="/settings/security"
-                  className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
-                    activePage === "settings-security"
-                      ? "bg-[#E5E0D5] text-black"
-                      : "text-black hover:bg-[#E5E0D5]"
-                  }`}
-                >
-                  <Lock className="w-3 h-3" />
-                  <span className="font-normal text-xs">Security & Access</span>
-                </Link>
-                <Link
-                  href="/settings/data"
-                  className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
-                    activePage === "settings-data"
-                      ? "bg-[#E5E0D5] text-black"
-                      : "text-black hover:bg-[#E5E0D5]"
-                  }`}
-                >
-                  <Shield className="w-3 h-3" />
-                  <span className="font-normal text-xs">Data & Privacy</span>
-                </Link>
-                <Link
-                  href="/signout"
-                  className="flex items-center space-x-2 px-2 py-1.5 text-black hover:bg-[#E5E0D5] transition-colors duration-200"
-                >
-                  <LogOut className="w-3 h-3" />
-                  <span className="font-normal text-xs">Sign Out</span>
-                </Link>
+              <div>
+                <div className="bg-[#E5E0D5] p-1 space-y-1">
+                  <Link
+                    href="/settings"
+                    className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
+                      activePage === "settings" ||
+                      activePage === "settings-profile"
+                        ? "bg-[#F3F1EB] text-black font-semibold"
+                        : "text-black hover:bg-[#F3F1EB]"
+                    }`}
+                  >
+                    <User className="w-3 h-3" />
+                    <span className="font-normal text-sm">
+                      Personal Profile
+                    </span>
+                  </Link>
+                  <Link
+                    href="/settings/security"
+                    className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
+                      activePage === "settings-security"
+                        ? "bg-[#F3F1EB] text-black font-semibold"
+                        : "text-black hover:bg-[#F3F1EB]"
+                    }`}
+                  >
+                    <Lock className="w-3 h-3" />
+                    <span className="font-normal text-sm">
+                      Security & Access
+                    </span>
+                  </Link>
+                  <Link
+                    href="/settings/data"
+                    className={`flex items-center space-x-2 px-2 py-1.5 transition-colors duration-200 ${
+                      activePage === "settings-data"
+                        ? "bg-[#F3F1EB] text-black font-semibold"
+                        : "text-black hover:bg-[#F3F1EB]"
+                    }`}
+                  >
+                    <Shield className="w-3 h-3" />
+                    <span className="font-normal text-sm">Data & Privacy</span>
+                  </Link>
+                  <Link
+                    href="/signout"
+                    className="flex items-center space-x-2 px-2 py-1.5 text-black hover:bg-[#F3F1EB] transition-colors duration-200"
+                  >
+                    <LogOut className="w-3 h-3" />
+                    <span className="font-normal text-sm">Sign Out</span>
+                  </Link>
+                </div>
               </div>
             )}
           </div>

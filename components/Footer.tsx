@@ -66,7 +66,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   Features
                 </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   Why It Matters
                 </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   Docs
                 </a>
@@ -102,7 +102,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   FAQ
                 </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   Privacy
                 </Link>
@@ -139,7 +139,7 @@ export default function Footer() {
                     isDark
                       ? "text-neutral-300 hover:text-white"
                       : "text-gray-600 hover:text-black"
-                  } hover:underline transition-colors duration-200 text-sm`}
+                  } hover:underline hover:underline-offset-4 transition-colors duration-200 text-sm`}
                 >
                   Terms
                 </Link>
