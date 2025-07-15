@@ -21,23 +21,13 @@ export default function CareersPage() {
       <div className="relative min-h-screen flex flex-col items-center justify-center px-6">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-7xl md:text-7xl font-medium mb-8 leading-none py-1 tracking-super-tight"
-            >
+            <h1 className="text-7xl md:text-7xl font-medium mb-8 leading-none py-1 tracking-super-tight">
               <span className="text-black">Join the team.</span>
               <br />
               <span className="text-black">Help us create solutions.</span>
             </h1>
 
-            <p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
-            >
+            <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed">
               We're a small team of students who are passionate about building
               innovative solutions for the community.
             </p>
