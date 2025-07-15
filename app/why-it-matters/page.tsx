@@ -22,32 +22,22 @@ export default function WhyItMattersPage() {
       <div className="relative px-6 pb-16 pt-32">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-6xl font-medium mb-12 leading-none py-1 tracking-super-tight"
-            >
+            <h1 className="text-5xl md:text-6xl font-medium mb-12 leading-none py-1 tracking-super-tight">
               <span className="text-black">Why Focus Matters</span>
               <br />
               <span className="text-black">More Than Ever</span>
-            </motion.h1>
+            </h1>
 
             <div className="w-32 h-px bg-gradient-to-r from-transparent via-black/20 to-transparent mx-auto mb-12"></div>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-900 mb-12 max-w-3xl mx-auto font-normal tracking-wide leading-relaxed"
-            >
+            <p className="text-xl text-neutral-900 mb-12 max-w-3xl mx-auto font-normal tracking-wide leading-relaxed">
               In the fast-paced world of software engineering and job hunting,
               distractions are your biggest productivity killers. Between social
               media notifications, endless tabs, and constant messaging, the
               average developer loses hours every day to interruptions — time
               that could be spent coding, learning, or preparing for that next
               big opportunity.
-            </motion.p>
+            </p>
 
             <motion.div
               initial={{ opacity: 0 }}
@@ -70,16 +60,11 @@ export default function WhyItMattersPage() {
       {/* The Cost of Distraction Section */}
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               The Cost of Distraction
             </h2>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <motion.div
@@ -152,12 +137,7 @@ export default function WhyItMattersPage() {
       {/* LeetGuard's Mission Section */}
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               LeetGuard's Mission
             </h2>
@@ -166,7 +146,7 @@ export default function WhyItMattersPage() {
               distracting sites and apps during your focused sessions, LeetGuard
               creates a protected environment where you can:
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div
@@ -239,12 +219,7 @@ export default function WhyItMattersPage() {
       {/* Join Us Section */}
       <div className="px-6 py-16">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 2.4 }}
-            className="text-center max-w-4xl mx-auto"
-          >
+          <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-medium mb-8 text-black">
               Join Us in Defending Focus
             </h2>
@@ -258,13 +233,18 @@ export default function WhyItMattersPage() {
               Together, let's build a future where focus wins.
             </p>
 
-            <div className="bg-[#F9F6F0] border border-black p-6 max-w-2xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="bg-[#F9F6F0] border border-black p-6 max-w-2xl mx-auto"
+            >
               <p className="text-sm text-neutral-600">
                 * Source: An insightful ChatGPT conversation and a sprinkle of
                 coder magic, 2025
               </p>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
