@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 export default function Features() {
   return (
@@ -17,7 +18,8 @@ export default function Features() {
               today.
             </p>
             <button className="inline-flex items-center justify-center px-6 py-3 h-12 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 border border-black/20 hover:border-black/50 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30 mt-8 w-fit">
-              See How It Works →
+              <span>See How It Works</span>
+              <ArrowRight className="w-3 h-3 ml-1" />
             </button>
           </div>
 
