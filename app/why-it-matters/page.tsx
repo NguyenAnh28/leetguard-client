@@ -7,8 +7,6 @@ import Link from "next/link";
 import NavbarLight from "@/components/NavbarLight";
 import Footer from "@/components/Footer";
 
-
-
 export default function WhyItMattersPage() {
   useEffect(() => {
     // Set light mode by default
@@ -55,7 +53,7 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-2xl p-8 mb-12"
+              className="bg-[#F9F6F0] border border-black p-8 mb-12"
             >
               <p className="text-lg text-neutral-800 italic">
                 "Research shows that it takes over 20 minutes to fully regain
@@ -88,7 +86,7 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Clock className="w-12 h-12 text-[#4F8CFF] mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
@@ -104,7 +102,7 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Brain className="w-12 h-12 text-[#6FE7DD] mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
@@ -120,7 +118,7 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.4 }}
-              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Zap className="w-12 h-12 text-[#FFC371] mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
@@ -136,7 +134,7 @@ export default function WhyItMattersPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}
-              className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm border border-black/10 p-6 hover:bg-white/10 transition-all duration-300"
             >
               <Target className="w-12 h-12 text-[#FF6B6B] mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
@@ -260,7 +258,7 @@ export default function WhyItMattersPage() {
               Together, let's build a future where focus wins.
             </p>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-black/10 rounded-2xl p-6 max-w-2xl mx-auto">
+            <div className="bg-[#F9F6F0] border border-black p-6 max-w-2xl mx-auto">
               <p className="text-sm text-neutral-600">
                 * Source: An insightful ChatGPT conversation and a sprinkle of
                 coder magic, 2025

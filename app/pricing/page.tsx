@@ -26,26 +26,16 @@ export default function PricingPage() {
       <div className="relative min-h-screen flex flex-col items-center justify-center px-6">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-7xl md:text-7xl font-medium mb-8 leading-none py-1 tracking-super-tight"
-            >
+            <h1 className="text-7xl md:text-7xl font-medium mb-8 leading-none py-1 tracking-super-tight">
               <span className="text-black">Start for free.</span>
               <br />
               <span className="text-black">Cut the distractions.</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed"
-            >
+            <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto font-normal tracking-wide leading-relaxed">
               Install the extension and start focusing better today. LeetGuard
               is always free to start.
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
@@ -87,7 +77,7 @@ export default function PricingPage() {
               }}
               className="w-full max-w-md mt-4"
             >
-              <div className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300">
+              <div className="bg-white border border-gray-200 p-8 transition-all duration-300">
                 <div className="text-center mb-8">
                   <h3 className="text-4xl font-medium text-black mb-2">Free</h3>
                   <div className="text-4xl font-medium text-black">

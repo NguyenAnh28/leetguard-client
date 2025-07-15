@@ -21,7 +21,7 @@ export default function CareersPage() {
       <div className="relative min-h-screen flex flex-col items-center justify-center px-6">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <motion.h1
+            <h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -30,9 +30,9 @@ export default function CareersPage() {
               <span className="text-black">Join the team.</span>
               <br />
               <span className="text-black">Help us create solutions.</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
+            <p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -40,7 +40,7 @@ export default function CareersPage() {
             >
               We're a small team of students who are passionate about building
               innovative solutions for the community.
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function CareersPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
+                className="bg-white border border-gray-200 p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
               >
                 <div className="mb-2 text-lg font-medium">
                   Software Engineer
@@ -83,7 +83,7 @@ export default function CareersPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
+                className="bg-white border border-gray-200 p-8 transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-[1.025] cursor-pointer"
               >
                 <div className="mb-2 text-lg font-medium">Anything else</div>
                 <div className="flex items-center text-neutral-500 mb-2">
