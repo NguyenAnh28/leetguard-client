@@ -18,7 +18,7 @@ export default function LogoCarousel() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h3 className="text-lg font-normal text-black mb-2">
-            Our users have offers at
+            OUR USERS HAVE OFFERS AT
           </h3>
         </div>
 

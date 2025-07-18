@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -164,6 +164,19 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center space-x-4">
+            <a
+              href="https://github.com/LeetGuard"
+              className={`${
+                isDark
+                  ? "text-neutral-400 hover:text-white"
+                  : "text-gray-500 hover:text-black"
+              } transition-colors duration-200 text-sm`}
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="w-5 h-5" />
+            </a>
             <a
               href="https://www.linkedin.com/company/leetguard/"
               className={`${

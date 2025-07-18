@@ -61,7 +61,7 @@ export default function NavbarLight() {
             {/* Sign Up */}
             <Link
               href="/signup"
-              className="inline-flex items-center justify-center px-2 py-2 h-8 rounded-lg bg-black text-white border-gray-300 hover:border-gray-400 hover:shadow-gray-300 text-sm font-medium transition-all duration-200 border hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+              className="inline-flex items-center justify-center px-2 py-2 h-8 rounded-lg bg-black text-white text-sm font-medium transition-all duration-200 hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.3)] hover:shadow-black/30"
             >
               <span>Sign Up</span>
               <ArrowUpRight className="w-3 h-3 ml-1" />
